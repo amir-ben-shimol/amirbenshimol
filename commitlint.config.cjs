@@ -67,7 +67,7 @@ const config = {
 					const { header } = parsed;
 
 					if (!commitRegex.test(header)) {
-						return [false, "header must be in format '<type>: <emoji?> <ticket?> <subject>\nexample => ci: 🚀 [V-123] example\n"];
+						return [false, "header must be in format '<type>: <emoji?> <subject>\nexample => ci: 🚀 [V-123] example\n"];
 					}
 
 					if (emptyCommitTicketIdRegex.test(header)) {
