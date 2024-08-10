@@ -1,0 +1,6 @@
+{
+	"$schema": "./node_modules/knip/schema.json",
+	"entry": "src/**/*",
+	"ignore": ["czvinyl.config.ts", "next-env.d.ts", "release.config.cjs", "@types/**/*"],
+	"ignoreDependencies": ["hygen", "commitizen", "@commitlint/cli", "postcss-nesting", "remark", "cspell"]
+}
