@@ -14,7 +14,7 @@ const Apps = () => {
 				</h1>
 				<UIGradienteText className="h-14 w-fit sm:h-14 sm:text-5xl lg:h-24 lg:text-7xl">Apps</UIGradienteText>
 			</div>
-			<div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-12">
+			<div className="grid grid-cols-1 gap-0 sm:gap-6 lg:grid-cols-2 lg:gap-12">
 				{appsList.map((app) => (
 					<App key={app.title} {...app} />
 				))}

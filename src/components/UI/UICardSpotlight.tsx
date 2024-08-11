@@ -30,14 +30,17 @@ export const UICardSpotlight = ({
 	const handleMouseLeave = () => setIsHovering(false);
 	return (
 		<div
-			className={cn('group/spotlight relative rounded-md border border-slate-300 bg-slate-100 p-6 dark:border-slate-800 dark:bg-black', className)}
+			className={cn(
+				'group/spotlight relative sm:rounded-md sm:border-2 sm:border-slate-300 sm:bg-slate-100 sm:p-6 sm:dark:border-slate-800 sm:dark:bg-black',
+				className,
+			)}
 			onMouseMove={handleMouseMove}
 			onMouseEnter={handleMouseEnter}
 			onMouseLeave={handleMouseLeave}
 			{...props}
 		>
 			<motion.div
-				className="pointer-events-none absolute -inset-px z-0 rounded-md bg-white opacity-0 transition duration-300 group-hover/spotlight:opacity-100 dark:bg-[#262626]"
+				className="pointer-events-none absolute -inset-px z-0 hidden rounded-md bg-white opacity-0 transition duration-300 group-hover/spotlight:opacity-100 dark:bg-[#262626] sm:flex"
 				style={{
 					maskImage: useMotionTemplate`
             radial-gradient(

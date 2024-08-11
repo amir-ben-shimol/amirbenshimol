@@ -112,16 +112,39 @@ export function Globe({ globeConfig, data }: WorldProps) {
 		globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity || 0.1;
 		globeMaterial.shininess = globeConfig.shininess || 0.9;
 	};
-
 	const _buildData = () => {
 		const arcs = data;
-		let points = [];
+		let points: Array<{
+			size: number;
+			order: number;
+			color: (t: number) => string;
+			lat: number;
+			lng: number;
+		}> = [];
+
+		if (!Array.isArray(arcs) || arcs.length === 0) {
+			console.error('No valid arcs data provided');
+			return;
+		}
+
 		for (let i = 0; i < arcs.length; i++) {
 			const arc = arcs[i];
 
-			if (!arc) return;
+			if (
+				!arc ||
+				typeof arc !== 'object' ||
+				arc.startLat === undefined ||
+				arc.startLng === undefined ||
+				arc.endLat === undefined ||
+				arc.endLng === undefined
+			) {
+				console.warn(`Skipping invalid arc at index ${i}`);
+				continue;
+			}
 
-			const rgb = hexToRgb(arc.color) as { r: number; g: number; b: number };
+			const arcColor = typeof arc.color === 'string' ? arc.color.trim() : '#000000';
+			const rgb = hexToRgb(arcColor) || { r: 0, g: 0, b: 0 };
+
 			points.push({
 				size: defaultProps.pointSize,
 				order: arc.order,
@@ -138,7 +161,6 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			});
 		}
 
-		// remove duplicates for same lat and lng
 		const filteredPoints = points.filter(
 			(v, i, a) => a.findIndex((v2) => ['lat', 'lng'].every((k) => v2[k as 'lat' | 'lng'] === v[k as 'lat' | 'lng'])) === i,
 		);
@@ -179,8 +201,8 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			.arcDashAnimateTime(() => defaultProps.arcTime);
 
 		globeRef.current
-			.pointsData(globeData)
-			.pointColor((e) => (e as { color: string }).color)
+			// .pointsData(globeData)
+			// .pointColor((point) => point.color) // Assumes point.color is already an rgba string
 			.pointsMerge(true)
 			.pointAltitude(0.0)
 			.pointRadius(2);
@@ -253,6 +275,8 @@ export function World(props: WorldProps) {
 }
 
 export function hexToRgb(hex?: string) {
+	console.log('hex input:', hex); // Log the input to see what is being passed
+
 	if (!hex || typeof hex !== 'string') return null;
 
 	const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;

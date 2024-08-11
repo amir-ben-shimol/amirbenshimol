@@ -18,7 +18,7 @@ export const UIBackgroundBoxes = React.memo((props: Props) => {
 
 	return (
 		<div
-			className={cn('absolute -top-1/4 left-1/4 z-0 flex h-full w-full -translate-x-1/2 -translate-y-1/2 p-4', props.className)}
+			className={cn('absolute -top-1/4 left-1/4 z-0 hidden h-full w-full -translate-x-1/2 -translate-y-1/2 p-4 sm:flex', props.className)}
 			style={{
 				transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
 			}}

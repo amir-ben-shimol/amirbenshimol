@@ -18,7 +18,7 @@ const Intro = () => {
 			</UIHoverBorderGradient>
 			<UIGradienteText as="h1">Amir Ben Shimol</UIGradienteText>
 			<UITextGenerateEffect className="z-20" words="Driven and self-taught Software Developer" />
-			<div className="mt-4 flex flex-col items-center gap-4 sm:mt-6 sm:flex-row">
+			<div className="mt-4 flex flex-col items-center gap-4 xs:flex-row sm:mt-6">
 				<Link
 					href="https://github.com/amir-ben-shimol"
 					target="_blank"

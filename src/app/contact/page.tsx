@@ -48,7 +48,7 @@ const Contact = () => {
 				<span className="absolute bottom-0 left-0 h-[2px] w-full origin-left scale-x-0 transform bg-gradient-to-r from-orange-700 via-blue-500 to-green-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100 sm:h-1" />
 			</Link>
 
-			<div className="absolute bottom-28 z-10 h-[450px] w-full sm:-bottom-10 sm:h-[700px]">
+			<div className="absolute bottom-6 z-10 h-[450px] w-full sm:-bottom-10 sm:h-[700px]">
 				<UIGlobe key={theme} data={getSampleArcs(theme ?? 'dark')} globeConfig={globeConfig} />
 			</div>
 		</PageWrapper>
