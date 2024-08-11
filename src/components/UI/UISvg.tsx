@@ -8,7 +8,7 @@ type Props = {
 	readonly onClick?: VoidFunction;
 };
 
-const UISvg = (props: Props) => {
+export const UISvg = (props: Props) => {
 	const clickHandler = (e: React.MouseEvent) => {
 		e.preventDefault();
 		e.stopPropagation();
@@ -29,5 +29,3 @@ const UISvg = (props: Props) => {
 		/>
 	);
 };
-
-export default React.memo(UISvg);

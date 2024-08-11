@@ -14,7 +14,7 @@ export const UIGradienteText = <T extends AsProp = 'h1'>({ as = 'h1' as T, child
 	return (
 		<Component
 			className={cn(
-				'bg-300% font-heading z-20 mt-10 h-20 animate-gradient bg-gradient-to-r from-orange-700 via-blue-500 to-green-500 bg-clip-text text-center text-3xl font-bold text-transparent sm:h-24 sm:text-7xl',
+				'bg-300% font-heading z-20 h-20 animate-gradient bg-gradient-to-r from-orange-700 via-blue-500 to-green-500 bg-clip-text text-center text-3xl font-bold text-transparent sm:h-24 sm:text-7xl',
 				className,
 			)}
 			{...rest}

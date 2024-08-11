@@ -7,6 +7,10 @@ export const headerNavigationElemets: NavElement[] = [
 		path: routes.home.path,
 	},
 	{
+		label: 'Apps',
+		path: routes.apps.path,
+	},
+	{
 		label: 'About',
 		path: routes.about.path,
 	},

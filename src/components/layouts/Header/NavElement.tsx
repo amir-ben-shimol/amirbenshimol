@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import type { NavElement as NavElementType } from '../../../lib/types/ui/navigation';
-import { routes } from 'src/lib/routes/routes';
-import UISvg from 'src/components/UI/UISvg';
+import { routes } from '../../../lib/routes/routes';
+import { UISvg } from '../../../components/ui/UISvg';
 
 const NavElement = (props: NavElementType) => {
 	const pathname = usePathname();
@@ -20,8 +20,8 @@ const NavElement = (props: NavElementType) => {
 						'🧀'
 					) : (
 						<>
-							<span className="xs:hidden block">Amir</span>
-							<span className="xs:inline hidden">Amir Ben Shimol</span>
+							<span className="block xs:hidden">Amir</span>
+							<span className="hidden xs:inline">Amir Ben Shimol</span>
 						</>
 					)}
 				</span>
@@ -39,7 +39,7 @@ const NavElement = (props: NavElementType) => {
 					<UISvg className="hover h-6 w-6" name={props.icon} />
 				</div>
 			) : (
-				<span className="xxs:block hidden text-lg text-slate-700 hover:text-slate-800 dark:text-slate-300 hover:dark:text-slate-100 sm:text-xl">
+				<span className="hidden text-lg text-slate-700 hover:text-slate-800 dark:text-slate-300 hover:dark:text-slate-100 xxs:block sm:text-xl">
 					{props.label}
 				</span>
 			)}

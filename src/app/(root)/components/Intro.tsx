@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { UIGradienteText } from 'src/components/UI/UIGradienteText';
-import { UIHoverBorderGradient } from 'src/components/UI/UIHoverBorderGradient';
-import UISvg from 'src/components/UI/UISvg';
-import { UITextGenerateEffect } from 'src/components/UI/UITextGenerateEffect';
+import { UIGradienteText } from 'src/components/ui/UIGradienteText';
+import { UIHoverBorderGradient } from 'src/components/ui/UIHoverBorderGradient';
+import { UISvg } from '../../../components/ui/UISvg';
+import { UITextGenerateEffect } from 'src/components/ui/UITextGenerateEffect';
 
 const Intro = () => {
 	return (
@@ -17,7 +17,7 @@ const Intro = () => {
 				<Image src={'/images/profile.jpg'} alt="Profile Picture" width={150} height={150} className="z-20 rounded-full" />
 			</UIHoverBorderGradient>
 			<UIGradienteText as="h1">Amir Ben Shimol</UIGradienteText>
-			<UITextGenerateEffect duration={2} className="z-20" words="Driven and self-taught Software Developer" />
+			<UITextGenerateEffect className="z-20" words="Driven and self-taught Software Developer" />
 			<div className="mt-4 flex flex-col items-center gap-4 sm:mt-6 sm:flex-row">
 				<Link
 					href="https://github.com/amir-ben-shimol"
