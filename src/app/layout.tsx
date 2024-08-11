@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const RootLayout = (props: Props) => {
 	return (
 		<AppWrapper>
-			<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+			<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
 				{props.children}
 			</ThemeProvider>
 		</AppWrapper>

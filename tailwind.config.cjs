@@ -82,6 +82,11 @@ module.exports = {
 					},
 				},
 			},
+			screens: {
+				xs: '380px',
+				xxs: '280px',
+				xxxs: '180px',
+			},
 		},
 	},
 	plugins: [

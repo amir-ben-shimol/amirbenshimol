@@ -1,13 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { UIGradienteText } from 'src/components/UI/UIGradienteText';
 import { UIHoverBorderGradient } from 'src/components/UI/UIHoverBorderGradient';
 import UISvg from 'src/components/UI/UISvg';
 import { UITextGenerateEffect } from 'src/components/UI/UITextGenerateEffect';
 
 const Intro = () => {
 	return (
-		<div className="mt-20 flex h-fit flex-col items-center">
+		<div className="mt-20 flex h-fit flex-col items-center px-2">
 			<UIHoverBorderGradient
 				containerClassName="rounded-full"
 				as="div"
@@ -15,22 +16,22 @@ const Intro = () => {
 			>
 				<Image src={'/images/profile.jpg'} alt="Profile Picture" width={150} height={150} className="z-20 rounded-full" />
 			</UIHoverBorderGradient>
-			<h1 className="bg-300% font-heading z-20 mt-10 h-16 animate-gradient bg-gradient-to-r from-orange-700 via-blue-500 to-green-500 bg-clip-text text-center text-5xl font-bold text-transparent sm:h-24 sm:text-7xl">
-				Amir Ben Shimol
-			</h1>
-			<UITextGenerateEffect duration={2} className="z-20" words="Full-Time cheese developer" />
-			<div className="mt-4 flex items-center gap-4 sm:mt-6">
+			<UIGradienteText as="h1">Amir Ben Shimol</UIGradienteText>
+			<UITextGenerateEffect duration={2} className="z-20" words="Driven and self-taught Software Developer" />
+			<div className="mt-4 flex flex-col items-center gap-4 sm:mt-6 sm:flex-row">
 				<Link
-					href="https://google.com"
-					className="z-20 flex items-center gap-2 rounded-full bg-slate-500 px-3 py-1 hover:bg-slate-600 sm:px-8 sm:py-3"
+					href="https://github.com/amir-ben-shimol"
+					target="_blank"
+					className="z-20 flex w-full items-center justify-center gap-2 rounded-full bg-slate-500 px-3 py-1 hover:bg-slate-600 sm:w-fit sm:px-8 sm:py-3"
 				>
 					<UISvg name="github" className="h-5 w-5" />
-					<span className="text-lg text-white sm:text-xl">Github</span>
+					<span className="text-lg text-white sm:text-xl">Code</span>
 				</Link>
 
 				<Link
-					href="https://google.com"
-					className="z-20 flex items-center gap-2 rounded-full bg-blue-800 px-3 py-1 hover:bg-blue-950 sm:px-8 sm:py-3"
+					href="https://www.linkedin.com/in/amir-ben-shimol-533169210/"
+					target="_blank"
+					className="z-20 flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-1 hover:bg-blue-950 sm:w-fit sm:px-8 sm:py-3"
 				>
 					<UISvg name="linkedin" className="h-5 w-5" />
 					<span className="text-lg text-white sm:text-xl">LinkedIn</span>

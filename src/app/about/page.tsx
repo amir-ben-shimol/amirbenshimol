@@ -11,7 +11,7 @@ const SocialMedia = dynamic(() => import('./components/SocialMedia'), {
 
 const About = () => {
 	return (
-		<PageWrapper>
+		<PageWrapper className="max-w-[830px]">
 			<Intro />
 			<GeneralLinks />
 			<SocialMedia />

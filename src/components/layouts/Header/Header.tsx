@@ -17,11 +17,11 @@ const Header = () => {
 			<div className="flex w-full max-w-[1300px] items-center justify-between">
 				{headerNavigationElemets[0] && <NavElement {...headerNavigationElemets[0]} />}
 
-				<div className="flex items-center gap-1 sm:gap-4">
+				<div className="flex items-center gap-3 sm:gap-8">
 					{headerNavigationElemets.slice(1).map((navItem, index) => (
 						<NavElement key={index} {...navItem} />
 					))}
-					<button type="button" onClick={toggleTheme}>
+					<button type="button" className="xxxs:block hidden" onClick={toggleTheme}>
 						<span className="text-xl">{theme === 'dark' ? '🌞' : '🌚'}</span>
 					</button>
 				</div>

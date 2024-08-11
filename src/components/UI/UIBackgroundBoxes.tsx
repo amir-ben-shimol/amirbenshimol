@@ -9,19 +9,9 @@ type Props = {
 };
 
 export const UIBackgroundBoxes = React.memo((props: Props) => {
-	const rows = new Array(150).fill(1);
-	const cols = new Array(100).fill(1);
-	const colors = [
-		'--sky-300',
-		'--pink-300',
-		'--green-300',
-		'--yellow-300',
-		'--red-300',
-		'--purple-300',
-		'--blue-300',
-		'--indigo-300',
-		'--violet-300',
-	];
+	const rows = new Array(100).fill(1);
+	const cols = new Array(50).fill(1);
+	const colors = ['--sky-300', '--pink-300', '--green-300', '--yellow-300', '--red-300', '--purple-300', '--blue-300', '--indigo-300', '--violet-300'];
 	const getRandomColor = () => {
 		return colors[Math.floor(Math.random() * colors.length)];
 	};

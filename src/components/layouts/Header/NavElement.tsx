@@ -14,8 +14,17 @@ const NavElement = (props: NavElementType) => {
 
 	if (props.path === routes.home.path) {
 		return (
-			<Link href={props.path} className={`px-4 py-2`}>
-				<span className="text-3xl font-bold text-foreground">{pathname === routes.home.path ? '🧀' : 'Amir Ben Shimol'}</span>
+			<Link href={props.path}>
+				<span className="text-xl font-bold text-slate-700 dark:text-slate-300 sm:text-3xl">
+					{pathname === routes.home.path ? (
+						'🧀'
+					) : (
+						<>
+							<span className="xs:hidden block">Amir</span>
+							<span className="xs:inline hidden">Amir Ben Shimol</span>
+						</>
+					)}
+				</span>
 			</Link>
 		);
 	}
@@ -23,16 +32,16 @@ const NavElement = (props: NavElementType) => {
 	return (
 		<Link
 			href={props.path}
-			className={`border-b-2 px-4 py-2 ${isActive && !props.icon ? 'border-b-green-500' : 'border-b-transparent'} ${
-				props.icon ? 'hover:fill-white' : ''
-			}`}
+			className={`border-b-2 ${isActive && !props.icon ? 'border-b-green-500' : 'border-b-transparent'} ${props.icon ? 'hover:fill-white' : ''}`}
 		>
 			{props.icon ? (
 				<div className="rounded-lg p-3 hover:bg-slate-400 hover:text-white hover:dark:bg-slate-700">
 					<UISvg className="hover h-6 w-6" name={props.icon} />
 				</div>
 			) : (
-				<span className="text-xl text-accent-foreground">{props.label}</span>
+				<span className="xxs:block hidden text-lg text-slate-700 hover:text-slate-800 dark:text-slate-300 hover:dark:text-slate-100 sm:text-xl">
+					{props.label}
+				</span>
 			)}
 		</Link>
 	);
