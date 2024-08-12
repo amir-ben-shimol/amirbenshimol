@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { UIGradienteText } from '../../../components/ui/UIGradienteText';
-import { UIHoverBorderGradient } from '../../../components/ui/UIHoverBorderGradient';
-import { UISvg } from '../../../components/ui/UISvg';
-import { UITextGenerateEffect } from '../../../components/ui/UITextGenerateEffect';
+import { UIGradienteText } from '@/ui/UIGradienteText';
+import { UIHoverBorderGradient } from '@/ui/UIHoverBorderGradient';
+import { UISvg } from '@/ui/UISvg';
+import { UITextGenerateEffect } from '@/ui/UITextGenerateEffect';
 
 const Intro = () => {
 	return (

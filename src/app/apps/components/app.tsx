@@ -1,6 +1,6 @@
 import React from 'react';
 import type { App as TApp } from '@/types/ui/app';
-import { UICardSpotlight } from '../../../components/ui/UICardSpotlight';
+import { UICardSpotlight } from '@/ui/UICardSpotlight';
 
 const App = (props: TApp) => {
 	return (

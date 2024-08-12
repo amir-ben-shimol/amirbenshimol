@@ -2,8 +2,8 @@
 
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { headerNavigationElemets } from '../../../lib/data/navigation';
-import { UISvg } from '../../ui/UISvg';
+import { UISvg } from '@/ui/UISvg';
+import { headerNavigationElemets } from '@/data/navigation';
 import NavElement from './NavElement';
 import HamburgerMenu from './HamburgerMenu';
 
