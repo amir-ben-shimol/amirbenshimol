@@ -5,10 +5,11 @@
 			"@/wrappers/*": ["src/components/wrappers/*"],
 			"@/types/*": ["src/lib/types/*"],
 			"@/utils/*": ["src/lib/utils/*"],
-			"@/routes/*": ["src/routes/*"],
 			"@/layouts/*": ["src/components/layouts/*"],
-			"@/helpers/*": ["src/lib/helpers/*"],
-			"@/data/*": ["src/lib/data/*"]
+			"@/data/*": ["src/lib/data/*"],
+			"@/ui/*": ["src/components/ui/*"],
+			"@/routes/*": ["src/lib/routes/*"],
+			"@/assets/*": ["src/assets/*"]
 		}
 	}
 }

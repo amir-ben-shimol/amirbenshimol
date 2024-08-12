@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PageWrapper from '@/wrappers/PageWrapper';
-import { UIBackgroundBoxes } from '../../components/ui/UIBackgroundBoxes';
+import { UIBackgroundBoxes } from '@/ui/UIBackgroundBoxes';
 import Intro from './components/Intro';
 
 const Root = () => {

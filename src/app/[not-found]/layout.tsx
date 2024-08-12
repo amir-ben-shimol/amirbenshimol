@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
-import { routes } from '../../lib/routes/routes';
+import { routes } from '@/routes/index';
 
 const NotFoundLayout = () => {
 	redirect(routes.home.path);

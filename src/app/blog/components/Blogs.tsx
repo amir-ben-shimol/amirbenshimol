@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { formatDate } from '@/utils/date';
 import { blogs } from '@/data/blogs';
-import { routes } from '../../../lib/routes/routes';
+import { routes } from '@/routes/index';
 
 const Blogs = () => {
 	const getBlogParams = (path: string) => {

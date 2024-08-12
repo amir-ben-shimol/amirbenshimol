@@ -1,5 +1,5 @@
-import { useTheme } from 'next-themes';
 import React from 'react';
+import { useTheme } from 'next-themes';
 import { headerNavigationElemets } from '@/data/navigation';
 import NavElement from './NavElement';
 

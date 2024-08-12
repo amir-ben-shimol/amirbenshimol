@@ -2,7 +2,7 @@ import React from 'react';
 
 import PageWrapper from '@/wrappers/PageWrapper';
 import { appsList } from '@/data/apps';
-import { UIGradienteText } from '../../components/ui/UIGradienteText';
+import { UIGradienteText } from '@/ui/UIGradienteText';
 import App from './components/app';
 
 const Apps = () => {

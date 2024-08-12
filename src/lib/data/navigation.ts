@@ -1,5 +1,5 @@
 import type { NavElement } from '@/types/ui/navigation';
-import { routes } from '../routes/routes';
+import { routes } from '@/routes/index';
 
 export const headerNavigationElemets: NavElement[] = [
 	{
