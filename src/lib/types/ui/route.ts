@@ -1,4 +1,4 @@
-import { routes } from '../../routes/routes';
+import type { routes } from '../../routes/routes';
 
 type Routes = typeof routes;
 

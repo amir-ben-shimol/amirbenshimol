@@ -1,5 +1,5 @@
+import type { Metadata } from 'next';
 import BaseLayout from '@/layouts/BaseLayout';
-import { Metadata } from 'next';
 
 type Props = {
 	readonly children: React.ReactNode;

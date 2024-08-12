@@ -1,20 +1,31 @@
+import withMDX from '@next/mdx';
+import remarkGfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+
 /** @type {import('next').NextConfig} */
-
-const nextConfig = (phase) => {
-	return {
-		reactStrictMode: false,
-		typescript: {
-			tsconfigPath: './tsconfig.build.json',
-		},
-		eslint: {
-			dirs: ['./src'],
-			ignoreDuringBuilds: true,
-		},
-
-		images: {
-			domains: ['api.microlink.io'],
-		},
-	};
+const nextConfig = {
+	reactStrictMode: false,
+	typescript: {
+		tsconfigPath: './tsconfig.build.json',
+	},
+	compiler: {
+		removeConsole: false,
+		reactRemoveProperties: true,
+	},
+	images: {
+		domains: ['api.microlink.io'],
+	},
+	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 };
 
-module.exports = nextConfig;
+/** @type {import('@next/mdx').NextMDXOptions} */
+const mdxConfig = {
+	options: {
+		remarkPlugins: [remarkGfm],
+		rehypePlugins: [rehypeRaw],
+	},
+};
+
+const nextWithMdxConfigFn = withMDX(mdxConfig);
+
+export default nextWithMdxConfigFn(nextConfig);

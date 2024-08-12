@@ -12,7 +12,8 @@ type Props = {
 
 export const UITextGenerateEffect = ({ words, className, filter = true, duration = 0.5 }: Props) => {
 	const [scope, animate] = useAnimate();
-	let wordsArray = words.split(' ');
+	const wordsArray = words.split(' ');
+
 	useEffect(() => {
 		animate(
 			'span',
@@ -39,7 +40,7 @@ export const UITextGenerateEffect = ({ words, className, filter = true, duration
 								filter: filter ? 'blur(10px)' : 'none',
 							}}
 						>
-							{word}{' '}
+							{`${word} `}
 						</motion.span>
 					);
 				})}

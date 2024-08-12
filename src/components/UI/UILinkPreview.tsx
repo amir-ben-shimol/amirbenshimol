@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
 import Image from 'next/image';
@@ -29,6 +30,7 @@ export const UILinkPreview = ({
 	imageSrc = '',
 }: Props) => {
 	let src;
+
 	if (!isStatic) {
 		const params = encode({
 			url,
@@ -41,6 +43,7 @@ export const UILinkPreview = ({
 			'viewport.width': width * 3,
 			'viewport.height': height * 3,
 		});
+
 		src = `https://api.microlink.io/?${params}`;
 	} else {
 		src = imageSrc;
@@ -63,6 +66,7 @@ export const UILinkPreview = ({
 		const targetRect = event.target.getBoundingClientRect();
 		const eventOffsetX = event.clientX - targetRect.left;
 		const offsetFromCenter = (eventOffsetX - targetRect.width / 2) / 2; // Reduce the effect to make it subtle
+
 		x.set(offsetFromCenter);
 	};
 
@@ -70,7 +74,7 @@ export const UILinkPreview = ({
 		<>
 			{isMounted ? (
 				<div className="hidden">
-					<Image src={src} width={width} height={height} quality={quality} layout={layout} priority={true} alt="hidden image" />
+					<Image src={src} width={width} height={height} quality={quality} layout={layout} priority alt="hidden image" />
 				</div>
 			) : null}
 
@@ -81,7 +85,7 @@ export const UILinkPreview = ({
 					setOpen(open);
 				}}
 			>
-				<HoverCardPrimitive.Trigger onMouseMove={handleMouseMove} className={cn('text-black dark:text-white', className)} href={url}>
+				<HoverCardPrimitive.Trigger className={cn('text-black dark:text-white', className)} href={url} onMouseMove={handleMouseMove}>
 					{children}
 				</HoverCardPrimitive.Trigger>
 
@@ -122,7 +126,7 @@ export const UILinkPreview = ({
 										height={height}
 										quality={quality}
 										layout={layout}
-										priority={true}
+										priority
 										className="rounded-lg"
 										alt="preview image"
 									/>

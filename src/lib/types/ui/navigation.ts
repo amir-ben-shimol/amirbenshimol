@@ -1,5 +1,5 @@
-import icons from '../../../assets/icons';
-import { RoutesPath } from './route';
+import type icons from '../../../assets/icons';
+import type { RoutesPath } from './route';
 
 export type NavElement = {
 	readonly label: string;

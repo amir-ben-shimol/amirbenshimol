@@ -1,4 +1,4 @@
-import { App } from '@/types/ui/app';
+import type { App } from '@/types/ui/app';
 
 export const appsList: App[] = [
 	{

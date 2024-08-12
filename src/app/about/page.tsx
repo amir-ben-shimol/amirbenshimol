@@ -1,9 +1,9 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 
 import PageWrapper from '@/wrappers/PageWrapper';
 import Intro from './components/Intro';
 import GeneralLinks from './components/GeneralLinks';
-import dynamic from 'next/dynamic';
 
 const SocialMedia = dynamic(() => import('./components/SocialMedia'), {
 	ssr: false,
@@ -11,7 +11,7 @@ const SocialMedia = dynamic(() => import('./components/SocialMedia'), {
 
 const About = () => {
 	return (
-		<PageWrapper className="max-w-[830px]">
+		<PageWrapper className="max-w-[700px]">
 			<Intro />
 			<GeneralLinks />
 			<SocialMedia />

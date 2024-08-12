@@ -4,10 +4,10 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { cn } from '@/utils/class-name';
 import type { NavElement as NavElementType } from '../../../lib/types/ui/navigation';
 import { routes } from '../../../lib/routes/routes';
-import { UISvg } from '../../../components/ui/UISvg';
-import { cn } from '@/utils/class-name';
+import { UISvg } from '../../ui/UISvg';
 
 type Props = {
 	readonly className?: string;

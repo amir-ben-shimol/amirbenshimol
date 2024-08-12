@@ -1,10 +1,10 @@
 'use client';
 
-import { blogs } from '@/data/blogs';
-import { formatDate } from '@/utils/date';
 import Link from 'next/link';
 import React from 'react';
-import { routes } from 'src/lib/routes/routes';
+import { formatDate } from '@/utils/date';
+import { blogs } from '@/data/blogs';
+import { routes } from '../../../lib/routes/routes';
 
 const Blogs = () => {
 	const getBlogParams = (path: string) => {

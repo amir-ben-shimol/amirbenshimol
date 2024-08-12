@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 export const getSampleArcs = (theme: string) => {
 	const lightModeColors = ['#34d399', '#3b82f6', '#60a5fa'];
 	const darkModeColors = ['#06b6d4', '#3b82f6', '#6366f1'];

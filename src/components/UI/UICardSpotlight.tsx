@@ -1,14 +1,13 @@
 'use client';
 
 import { useMotionValue, motion, useMotionTemplate } from 'framer-motion';
-import React, { MouseEvent as ReactMouseEvent, useState } from 'react';
+import React, { type MouseEvent as ReactMouseEvent, useState } from 'react';
 import { cn } from '@/utils/class-name';
 import { UICanvasRevealEffect } from './UICanvasRevealEffect';
 
 export const UICardSpotlight = ({
 	children,
 	radius = 350,
-	color = '#262626',
 	className,
 	...props
 }: {
@@ -18,16 +17,18 @@ export const UICardSpotlight = ({
 } & React.HTMLAttributes<HTMLDivElement>) => {
 	const mouseX = useMotionValue(0);
 	const mouseY = useMotionValue(0);
-	function handleMouseMove({ currentTarget, clientX, clientY }: ReactMouseEvent<HTMLDivElement>) {
-		let { left, top } = currentTarget.getBoundingClientRect();
+
+	const handleMouseMove = ({ currentTarget, clientX, clientY }: ReactMouseEvent<HTMLDivElement>) => {
+		const { left, top } = currentTarget.getBoundingClientRect();
 
 		mouseX.set(clientX - left);
 		mouseY.set(clientY - top);
-	}
+	};
 
 	const [isHovering, setIsHovering] = useState(false);
 	const handleMouseEnter = () => setIsHovering(true);
 	const handleMouseLeave = () => setIsHovering(false);
+
 	return (
 		<div
 			className={cn(

@@ -1,7 +1,7 @@
-import { socialMedia } from '@/data/external-link';
 import Link from 'next/link';
 import React from 'react';
-import { UILinkPreview } from 'src/components/ui/UILinkPreview';
+import { socialMedia } from '@/data/external-link';
+import { UILinkPreview } from '../../../components/ui/UILinkPreview';
 
 const SocialMedia = () => {
 	return (

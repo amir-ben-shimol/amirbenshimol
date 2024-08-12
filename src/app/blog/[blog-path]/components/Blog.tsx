@@ -2,8 +2,6 @@
 
 import React, { useMemo } from 'react';
 import { useParams } from 'next/navigation';
-import remarkGfm from 'remark-gfm';
-import ReactMarkdown from 'react-markdown';
 
 import { blogs } from '@/data/blogs';
 import { formatDate } from '@/utils/date';
@@ -30,9 +28,7 @@ const Blog = () => {
 			</div>
 			<h2 className="mb-1 text-2xl font-bold sm:mb-3 sm:text-5xl">{blog.title}</h2>
 			<span className="mb-10 max-w-[600px] text-center text-lg text-gray-400 sm:text-xl">{blog.description}</span>
-			<ReactMarkdown remarkPlugins={[remarkGfm]} className="prose sm:prose-xl dark:prose-invert">
-				{blog.content}
-			</ReactMarkdown>
+			<div>{blog.contentElement}</div>
 		</div>
 	);
 };

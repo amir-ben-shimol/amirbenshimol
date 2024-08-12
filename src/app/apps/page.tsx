@@ -1,9 +1,9 @@
 import React from 'react';
 
 import PageWrapper from '@/wrappers/PageWrapper';
-import App from './components/app';
-import { UIGradienteText } from '../../components/ui/UIGradienteText';
 import { appsList } from '@/data/apps';
+import { UIGradienteText } from '../../components/ui/UIGradienteText';
+import App from './components/app';
 
 const Apps = () => {
 	return (

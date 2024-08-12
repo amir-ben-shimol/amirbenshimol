@@ -1,4 +1,4 @@
-import { ExternalLink } from '@/types/ui/external-link';
+import type { ExternalLink } from '@/types/ui/external-link';
 
 export const socialMedia: ExternalLink[] = [
 	{

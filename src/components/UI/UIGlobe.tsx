@@ -1,11 +1,16 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable max-lines */
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from 'three';
 import ThreeGlobe from 'three-globe';
-import { useThree, Object3DNode, Canvas, extend } from '@react-three/fiber';
+import { useThree, type Object3DNode, Canvas, extend } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import countries from '@/data/globe.json';
+
 declare module '@react-three/fiber' {
+	// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 	interface ThreeElements {
 		threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
 	}
@@ -53,14 +58,14 @@ export type GlobeConfig = {
 	autoRotateSpeed?: number;
 };
 
-interface WorldProps {
+type WorldProps = {
 	globeConfig: GlobeConfig;
 	data: Position[];
-}
+};
 
 let numbersOfRings = [0];
 
-export function Globe({ globeConfig, data }: WorldProps) {
+export const Globe = ({ globeConfig, data }: WorldProps) => {
 	const [globeData, setGlobeData] = useState<
 		| {
 				size: number;
@@ -107,14 +112,17 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			emissiveIntensity: number;
 			shininess: number;
 		};
+
 		globeMaterial.color = new Color(globeConfig.globeColor);
 		globeMaterial.emissive = new Color(globeConfig.emissive);
 		globeMaterial.emissiveIntensity = globeConfig.emissiveIntensity || 0.1;
 		globeMaterial.shininess = globeConfig.shininess || 0.9;
 	};
+
 	const _buildData = () => {
 		const arcs = data;
-		let points: Array<{
+
+		const points: Array<{
 			size: number;
 			order: number;
 			color: (t: number) => string;
@@ -124,6 +132,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
 		if (!Array.isArray(arcs) || arcs.length === 0) {
 			console.error('No valid arcs data provided');
+
 			return;
 		}
 
@@ -139,6 +148,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 				arc.endLng === undefined
 			) {
 				console.warn(`Skipping invalid arc at index ${i}`);
+
 				continue;
 			}
 
@@ -192,7 +202,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			.arcStartLng((d) => (d as { startLng: number }).startLng)
 			.arcEndLat((d) => (d as { endLat: number }).endLat)
 			.arcEndLng((d) => (d as { endLng: number }).endLng)
-			.arcColor((e: any) => (e as { color: string }).color)
+			.arcColor((e: unknown) => (e as { color: string }).color)
 			.arcAltitude((e) => (e as { arcAlt: number }).arcAlt)
 			.arcStroke(() => [0.32, 0.28, 0.3][Math.round(Math.random() * 2)]!)
 			.arcDashLength(defaultProps.arcLength)
@@ -214,11 +224,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
 			.ringPropagationSpeed(RING_PROPAGATION_SPEED)
 			.ringRepeatPeriod((defaultProps.arcTime * defaultProps.arcLength) / defaultProps.rings);
 	};
+
 	useEffect(() => {
 		if (!globeRef.current || !globeData) return;
 
 		const interval = setInterval(() => {
 			if (!globeRef.current || !globeData) return;
+
 			numbersOfRings = genRandomNumbers(0, data.length, Math.floor((data.length * 4) / 5));
 
 			globeRef.current.ringsData(globeData.filter((_, i) => numbersOfRings.includes(i)));
@@ -229,14 +241,10 @@ export function Globe({ globeConfig, data }: WorldProps) {
 		};
 	}, [globeRef.current, globeData]);
 
-	return (
-		<>
-			<threeGlobe ref={globeRef} />
-		</>
-	);
-}
+	return <threeGlobe ref={globeRef} />;
+};
 
-export function WebGLRendererConfig() {
+export const WebGLRendererConfig = () => {
 	const { gl, size } = useThree();
 
 	useEffect(() => {
@@ -246,12 +254,14 @@ export function WebGLRendererConfig() {
 	}, []);
 
 	return null;
-}
+};
 
-export function World(props: WorldProps) {
+export const World = (props: WorldProps) => {
 	const { globeConfig } = props;
 	const scene = new Scene();
+
 	scene.fog = new Fog(0xffffff, 400, 2000);
+
 	return (
 		<Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
 			<WebGLRendererConfig />
@@ -266,13 +276,13 @@ export function World(props: WorldProps) {
 				minDistance={cameraZ}
 				maxDistance={cameraZ}
 				autoRotateSpeed={1}
-				autoRotate={true}
+				autoRotate
 				minPolarAngle={Math.PI / 3.5}
 				maxPolarAngle={Math.PI - Math.PI / 3}
 			/>
 		</Canvas>
 	);
-}
+};
 
 export function hexToRgb(hex?: string) {
 	console.log('hex input:', hex); // Log the input to see what is being passed
@@ -280,11 +290,13 @@ export function hexToRgb(hex?: string) {
 	if (!hex || typeof hex !== 'string') return null;
 
 	const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+
 	hex = hex.replace(shorthandRegex, function (_, r, g, b) {
 		return r + r + g + g + b + b;
 	});
 
 	const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+
 	return result
 		? {
 				r: parseInt(result[1]!, 16),
@@ -296,8 +308,10 @@ export function hexToRgb(hex?: string) {
 
 export function genRandomNumbers(min: number, max: number, count: number) {
 	const arr = [];
+
 	while (arr.length < count) {
 		const r = Math.floor(Math.random() * (max - min)) + min;
+
 		if (arr.indexOf(r) === -1) arr.push(r);
 	}
 

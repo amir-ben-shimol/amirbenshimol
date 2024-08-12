@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import PageWrapper from '@/wrappers/PageWrapper';
-import { UIGradienteText } from '../../components/ui/UIGradienteText';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import { useTheme } from 'next-themes';
+import PageWrapper from '@/wrappers/PageWrapper';
 import { getSampleArcs } from '@/utils/globe';
+import { UIGradienteText } from '../../components/ui/UIGradienteText';
 
 const UIGlobe = dynamic(() => import('../../components/ui/UIGlobe').then((m) => m.World), {
 	ssr: false,

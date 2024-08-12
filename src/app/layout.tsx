@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 import AppWrapper from '@/wrappers/AppWrapper';
-import ThemeProvider from '@/providers/ThemeProvider';
+import ThemeProvider from '@/providers/themeProvider';
 
 import '../styles/globals.css';
 

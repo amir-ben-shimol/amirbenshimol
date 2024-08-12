@@ -1,10 +1,10 @@
 'use client';
 
 import React from 'react';
-import { headerNavigationElemets } from '../../../lib/data/navigation';
-import NavElement from './NavElement';
 import { useTheme } from 'next-themes';
-import { UISvg } from 'src/components/ui/UISvg';
+import { headerNavigationElemets } from '../../../lib/data/navigation';
+import { UISvg } from '../../ui/UISvg';
+import NavElement from './NavElement';
 import HamburgerMenu from './HamburgerMenu';
 
 const Header = () => {

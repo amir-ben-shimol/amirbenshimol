@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,7 +104,7 @@
 		overflow-x: hidden;
 		direction: ltr;
 		font-size: 14px;
-		font-family: 'Inter', sans-serif;
+		font-family: 'Open Sans' sans-serif;
 	}
 
 	.iconStroke {
