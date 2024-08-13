@@ -15,7 +15,7 @@ const Blogs = () => {
 		<div key={index} className="mb-14 flex flex-col items-start">
 			<Link
 				className="border-b-2 border-transparent pb-1 text-2xl font-bold text-foreground text-slate-700 hover:border-b-foreground dark:text-slate-300 sm:pb-2 sm:text-5xl"
-				href={getBlogParams(blog.path)}
+				href={getBlogParams(blog.id)}
 			>
 				{blog.title}
 			</Link>

@@ -9,11 +9,11 @@ import { formatDate } from '@/utils/date';
 const Blog = () => {
 	const params = useParams();
 
-	const blogPath = Array.isArray(params?.['blog-path']) ? params['blog-path'][0] : params?.['blog-path'];
+	const blogId = Array.isArray(params?.['blog-id']) ? params['blog-id'][0] : params?.['blog-id'];
 
 	const blog = useMemo(() => {
-		return blogs.find((blog) => blog.path === blogPath);
-	}, [blogPath]);
+		return blogs.find((blog) => blog.id === blogId);
+	}, [blogId]);
 
 	if (!blog) {
 		return <div>Blog not found</div>;
