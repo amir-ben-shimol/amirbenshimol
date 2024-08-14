@@ -4,7 +4,7 @@ import CssScssVsTailwindWhenToUseWhat from './content/css-scss-vs-tailwind-when-
 
 export const blogs: Blog[] = [
 	{
-		path: 'css-scss-vs-tailwind-when-to-use-what',
+		id: 'css-scss-vs-tailwind-when-to-use-what',
 		title: 'CSS/SCSS vs. Tailwind: When to Use What',
 		description:
 			'Exploring the pros and cons of CSS/SCSS and Tailwind, this article provides insights into when to use each approach based on project size, team composition, and performance considerations',

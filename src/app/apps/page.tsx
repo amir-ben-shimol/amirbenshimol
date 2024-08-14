@@ -3,7 +3,7 @@ import React from 'react';
 import PageWrapper from '@/wrappers/PageWrapper';
 import { appsList } from '@/data/apps';
 import { UIGradienteText } from '@/ui/UIGradienteText';
-import App from './components/app';
+import App from './components/App';
 
 const Apps = () => {
 	return (

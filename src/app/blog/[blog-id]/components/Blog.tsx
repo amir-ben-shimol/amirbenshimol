@@ -13,7 +13,7 @@ const Blog = () => {
 
 	const blog = useMemo(() => {
 		return blogs.find((blog) => blog.id === blogId);
-	}, [blogId]);
+	}, [blogId, params]);
 
 	if (!blog) {
 		return <div>Blog not found</div>;

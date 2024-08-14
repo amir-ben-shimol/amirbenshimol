@@ -2,9 +2,10 @@ import type { App } from '@/types/ui/app';
 
 export const appsList: App[] = [
 	{
+		id: 'friendly-senior',
 		title: 'Friendly Senior',
 		description: 'GitHub app to review pull requests',
-		image: '/images/apps/friendly-senior-logo.jpeg',
+		image: '/images/apps/friendly-senior/logo.jpeg',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB',
@@ -15,9 +16,15 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white',
 			'https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white',
 		],
-		url: 'https://github.com/apps/friendlysenior',
+		link: 'https://github.com/apps/friendlysenior',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/friendly-senior',
+		assets: {
+			web: ['/images/apps/friendly-senior/checks.png', '/images/apps/friendly-senior/comment.png'],
+			mobile: ['/images/apps/friendly-senior/checks-mobile.png', '/images/apps/friendly-senior/comment-mobile.png'],
+		},
 	},
 	{
+		id: 'book-shuffle',
 		title: 'Book Shuffle',
 		description: 'Mobile app to discover and shuffle reading lists',
 		image: '/images/apps/book-shuffle-logo.png',
@@ -32,9 +39,10 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white',
 			'https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white',
 		],
-		url: 'https://www.skyjourneyapp.com',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/book-shuffle-app',
 	},
 	{
+		id: 'sky-journey',
 		title: 'Sky Journey',
 		description: 'Web app to visualize drone flight data',
 		image: '/images/apps/skyjourney-logo.png',
@@ -44,12 +52,13 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
 			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
 		],
-		url: 'https://www.skyjourneyapp.com',
+		link: 'https://www.skyjourneyapp.com',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/sky-journey',
 	},
 	{
+		id: 'kynesis-dashboard',
 		title: 'Kynesis Dashboard',
 		description: 'An open-source product following best practices',
-		url: 'https://github.com/amir-ben-shimol/kynesis-dashboard',
 		image: '/images/apps/kynesis-logo.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
@@ -64,12 +73,13 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/Tor_Browser-7D4698?style=for-the-badge&logo=Tor-Browser&logoColor=white',
 			'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
 		],
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/kynesis-dashboard',
 	},
 	{
+		id: 'exlint-dashboard',
 		title: 'Exlint Dashboard',
 		description: 'An open-source SaaS product following best practices',
 		image: '/images/apps/exlint-logo.png',
-		url: 'https://www.skyjourneyapp.com',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white',
@@ -84,8 +94,10 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
 			'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
 		],
+		sourceCodeLink: 'https://github.com/Exlint/dashboard',
 	},
 	{
+		id: 'spring-productions',
 		title: 'Spring Productions',
 		description: 'Website portfolio for a video production company',
 		image: '/images/apps/spring-logo.png',
@@ -96,9 +108,10 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/strapi-%230080FF.svg?style=for-the-badge&logo=strapi&logoColor=white',
 			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
 		],
-		url: 'https://www.skyjourneyapp.com',
+		link: 'https://springproductions.co.il/',
 	},
 	{
+		id: 'aviv-shiloh-portfolio',
 		title: 'Aviv Shiloh Portfolio',
 		description: 'Website portfolio for a personal photographer',
 		image: '/images/apps/aviv-shiloh-logo.png',
@@ -110,6 +123,6 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/strapi-%230080FF.svg?style=for-the-badge&logo=strapi&logoColor=white',
 			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
 		],
-		url: 'https://www.skyjourneyapp.com',
+		link: 'https://www.avivshiloh.com/',
 	},
 ];
