@@ -42,7 +42,7 @@ resource "kubernetes_deployment_v1" "website" {
 
           port {
             container_port = 80
-            name           = "amir-ben-shimol-website"
+            name           = "http-port"
           }
 
           resources {
