@@ -1,0 +1,71 @@
+name: Destroy Terrafrom
+
+on:
+    workflow_dispatch:
+
+jobs:
+    destroy_terraform:
+        name: Destroy Terraform
+        runs-on: ubuntu-latest
+        env:
+            AWS_REGION: ${{ vars.AWS_REGION }}
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+            TF_VAR_website_ecr_repository: website
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version-file: '.nvmrc'
+
+            - uses: pnpm/action-setup@v3
+              with:
+                  run_install: true
+
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v4
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ vars.AWS_REGION }}
+
+            - name: Get package.json version
+              id: package-version
+              uses: martinbeentjes/npm-get-version-action@main
+
+            - name: Terraform setup
+              uses: hashicorp/setup-terraform@v3
+
+            - name: Terraform K8s init
+              working-directory: terraform/k8s
+              env:
+                  TERRAFORM_BACKEND_S3_BUCKET: ${{ secrets.TERRAFORM_BACKEND_S3_BUCKET }}
+                  TERRAFORM_BACKEND_DYNAMODB_TABLE: ${{ secrets.TERRAFORM_BACKEND_DYNAMODB_TABLE }}
+              run: |
+                  terraform init \
+                  -backend-config="bucket=$TERRAFORM_BACKEND_S3_BUCKET" \
+                  -backend-config="dynamodb_table=$TERRAFORM_BACKEND_DYNAMODB_TABLE" \
+                  -backend-config="region=$AWS_REGION"
+
+            - name: Terraform K8s destroy
+              working-directory: terraform/k8s
+              env:
+                  TF_VAR_website_docker_image_tag: ${{ steps.package-version.outputs.current-version }}-${{ github.sha }}
+              run: terraform destroy -auto-approve
+
+            - name: Terraform core init
+              working-directory: terraform/core
+              env:
+                  TERRAFORM_BACKEND_S3_BUCKET: ${{ secrets.TERRAFORM_BACKEND_S3_BUCKET }}
+                  TERRAFORM_BACKEND_DYNAMODB_TABLE: ${{ secrets.TERRAFORM_BACKEND_DYNAMODB_TABLE }}
+              run: |
+                  terraform init \
+                  -backend-config="bucket=$TERRAFORM_BACKEND_S3_BUCKET" \
+                  -backend-config="dynamodb_table=$TERRAFORM_BACKEND_DYNAMODB_TABLE" \
+                  -backend-config="region=$AWS_REGION"
+
+            - name: Terraform core destroy
+              working-directory: terraform/core
+              run: terraform destroy -auto-approve
