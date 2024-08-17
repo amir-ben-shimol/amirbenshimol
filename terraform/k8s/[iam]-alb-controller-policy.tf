@@ -40,7 +40,7 @@ data "aws_iam_policy_document" "irsa_alb_controller_trust_policy_doc" {
 }
 
 resource "aws_iam_role" "alb_controller_role" {
-  name               = "alb-controller-role"
+  name               = "${var.project}-ALB-Controller-Role"
   assume_role_policy = data.aws_iam_policy_document.irsa_alb_controller_trust_policy_doc.json
   path               = "/"
 
