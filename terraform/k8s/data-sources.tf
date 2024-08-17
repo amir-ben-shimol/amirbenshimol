@@ -1,5 +1,5 @@
 data "aws_eks_cluster" "website" {
-  name = "website"
+  name = "amir-ben-shimol-website"
 }
 
 data "aws_eks_cluster_auth" "website" {
