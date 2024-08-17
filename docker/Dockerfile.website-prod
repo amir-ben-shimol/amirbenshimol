@@ -1,0 +1,17 @@
+
+FROM node:20.16.0
+
+RUN npm i -g pnpm@9.4.0
+
+WORKDIR /app
+
+COPY ./package.json ./.npmrc ./
+
+RUN pnpm i --ignore-scripts
+
+COPY ./tsconfig.base.json ./
+COPY ./ ./
+
+RUN pnpm build
+
+CMD ["pnpm", "start:prod"]
