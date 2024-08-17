@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 // import { Modal, ModalBody, ModalContent, ModalTrigger } from '@/ui/UIAnimatedModal';
 
+import { cn } from '@/utils/class-name';
 import { appsList } from '@/data/apps';
 import { UISvg } from '@/ui/UISvg';
 import ImagePreview from './ImagePreview';
@@ -24,16 +25,9 @@ const App = () => {
 		return <div>App not found</div>;
 	}
 
-	const onScrollToSection = (ref: React.RefObject<HTMLDivElement>, offset = 0) => {
+	const onScrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
 		if (ref.current) {
-			// Scroll into view with smooth behavior
 			ref.current.scrollIntoView({ behavior: 'smooth' });
-
-			// Adjust the position by the desired offset
-			window.scrollBy({
-				top: -offset, // Negative offset to scroll up by the desired amount
-				behavior: 'smooth',
-			});
 		} else {
 			console.warn('Ref is null, unable to scroll to section');
 		}
@@ -41,7 +35,7 @@ const App = () => {
 
 	return (
 		<div className="flex w-full flex-col items-center">
-			<div className="flex h-[calc(100vh-145px)] w-full flex-col items-center">
+			<div className="flex h-[calc(100vh-260px)] w-full flex-col items-center">
 				<div className="mb-3 overflow-hidden rounded-[48px]">
 					<Image src={app.image} alt={app.title} width={224} height={224} />
 				</div>
@@ -71,24 +65,26 @@ const App = () => {
 					)}
 				</div>
 
-				<div className="text-primary-600 instapaper_ignore mt-8 flex max-w-md flex-wrap justify-center gap-4 text-xl font-semibold">
-					<a className="hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300" onClick={() => onScrollToSection(assetsRef, 1000)}>
-						Images
-					</a>
-					<a className="hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">Images</a>
-					<a className="hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">Images</a>
-					<a className="hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">Images</a>
-				</div>
+				{app.assets && (
+					<div className="text-primary-600 instapaper_ignore mt-8 flex max-w-md cursor-pointer flex-wrap justify-center gap-4 text-xl font-semibold">
+						<a className="text-blue-400 hover:text-blue-400 dark:hover:text-blue-300" onClick={() => onScrollToSection(assetsRef)}>
+							Assets
+						</a>
+					</div>
+				)}
 			</div>
 
 			{app.assets && (
-				<div className="flex flex-col gap-10" ref={assetsRef}>
-					{app.assets.web.map((asset, index) => (
+				<div className={cn('flex gap-10 pt-32', app.assets.viewType === 'mobile' ? 'flex-wrap' : 'flex-col')} ref={assetsRef}>
+					{app.assets.web.map((image, index) => (
 						<div
 							key={index}
-							className="rounded-xl bg-slate-950 p-2 shadow-[0_0_20px_5px_rgba(128,128,128,0.6)] dark:shadow-[0_0_20px_5px_rgba(255,255,255,0.4)]"
+							className={cn(
+								'bg-slate-950 p-2 shadow-[0_0_20px_5px_rgba(128,128,128,0.6)] dark:shadow-[0_0_20px_5px_rgba(255,255,255,0.4)]',
+								app.assets!.viewType === 'mobile' ? 'mx-auto rounded-[58px]' : 'rounded-xl',
+							)}
 						>
-							<ImagePreview webImage={asset} mobileImage={app.assets?.mobile[index] ?? ''} alt={app.title} />
+							<ImagePreview webImage={image} mobileImage={app.assets!.mobile?.[index]} viewType={app.assets!.viewType} />
 						</div>
 					))}
 				</div>

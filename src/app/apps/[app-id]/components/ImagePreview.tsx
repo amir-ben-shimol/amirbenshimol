@@ -3,11 +3,13 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
+import type { ImageType } from '@/types/ui/app';
+import { cn } from '@/utils/class-name';
 
 type Props = {
-	readonly webImage: string;
-	readonly mobileImage: string;
-	readonly alt: string;
+	readonly viewType: 'web' | 'mobile';
+	readonly webImage: ImageType;
+	readonly mobileImage?: ImageType;
 };
 
 const ImagePreview = (props: Props) => {
@@ -15,7 +17,14 @@ const ImagePreview = (props: Props) => {
 
 	return (
 		<>
-			<Image src={props.webImage} alt={props.alt} width={915} height={224} onClick={() => setIsOpen(true)} />
+			<Image
+				className={cn('cursor-pointer', props.viewType === 'mobile' && 'rounded-[48px]')}
+				src={props.webImage.source}
+				alt={props.webImage.alt}
+				width={props.webImage.width}
+				height={props.webImage.height}
+				onClick={() => setIsOpen(true)}
+			/>
 			{isOpen && (
 				<AnimatePresence>
 					{isOpen && (
@@ -30,10 +39,19 @@ const ImagePreview = (props: Props) => {
 								initial={{ scale: 0, rotate: '12.5deg' }}
 								animate={{ scale: 1, rotate: '0deg' }}
 								exit={{ scale: 0, rotate: '0deg' }}
-								className="flex h-fit max-h-[80%] w-full max-w-[715px] items-center justify-center overflow-hidden rounded-xl p-2"
+								className={cn(
+									'flex items-center justify-center overflow-hidden',
+									props.viewType === 'mobile' ? 'rounded-[48px]' : 'h-fit max-h-[80%] w-full max-w-[715px] rounded-xl p-2',
+								)}
 								onClick={(e) => e.stopPropagation()}
 							>
-								<Image className="w-full rounded-xl" src={props.mobileImage} alt={props.alt} width={915} height={324} />
+								<Image
+									className="w-full rounded-xl"
+									src={props.mobileImage?.source ?? props.webImage.source}
+									alt={props.mobileImage?.alt ?? props.webImage.alt}
+									width={props.mobileImage?.width ?? props.webImage.width}
+									height={props.mobileImage?.height ?? props.webImage.height}
+								/>
 							</motion.div>
 						</motion.div>
 					)}

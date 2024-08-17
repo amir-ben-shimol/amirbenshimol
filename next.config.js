@@ -13,7 +13,13 @@ const nextConfig = {
 		reactRemoveProperties: true,
 	},
 	images: {
-		domains: ['api.microlink.io'],
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'api.microlink.io',
+				pathname: '**',
+			},
+		],
 	},
 	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 };

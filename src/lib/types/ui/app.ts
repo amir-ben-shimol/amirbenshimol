@@ -10,6 +10,15 @@ export type App = {
 };
 
 type Assets = {
-	web: string[];
-	mobile: string[];
+	readonly assetsPerRow: number;
+	readonly viewType: 'web' | 'mobile';
+	readonly web: ImageType[];
+	readonly mobile?: ImageType[];
+};
+
+export type ImageType = {
+	readonly source: string;
+	readonly alt: string;
+	readonly width: number;
+	readonly height: number;
 };

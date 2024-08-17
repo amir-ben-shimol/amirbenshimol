@@ -1,3 +1,4 @@
+/* eslint-disable max-lines */
 import type { App } from '@/types/ui/app';
 
 export const appsList: App[] = [
@@ -19,15 +20,43 @@ export const appsList: App[] = [
 		link: 'https://github.com/apps/friendlysenior',
 		sourceCodeLink: 'https://github.com/amir-ben-shimol/friendly-senior',
 		assets: {
-			web: ['/images/apps/friendly-senior/checks.png', '/images/apps/friendly-senior/comment.png'],
-			mobile: ['/images/apps/friendly-senior/checks-mobile.png', '/images/apps/friendly-senior/comment-mobile.png'],
+			viewType: 'web',
+			assetsPerRow: 1,
+			web: [
+				{
+					source: '/images/apps/friendly-senior/checks.png',
+					alt: 'Checks',
+					width: 915,
+					height: 224,
+				},
+				{
+					source: '/images/apps/friendly-senior/comment.png',
+					alt: 'Comment',
+					width: 915,
+					height: 224,
+				},
+			],
+			mobile: [
+				{
+					source: '/images/apps/friendly-senior/checks-mobile.png',
+					alt: 'Checks',
+					width: 915,
+					height: 324,
+				},
+				{
+					source: '/images/apps/friendly-senior/comment-mobile.png',
+					alt: 'Comment',
+					width: 915,
+					height: 324,
+				},
+			],
 		},
 	},
 	{
 		id: 'book-shuffle',
 		title: 'Book Shuffle',
 		description: 'Mobile app to discover and shuffle reading lists',
-		image: '/images/apps/book-shuffle-logo.png',
+		image: '/images/apps/book-shuffle/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
@@ -40,6 +69,98 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white',
 		],
 		sourceCodeLink: 'https://github.com/amir-ben-shimol/book-shuffle-app',
+		assets: {
+			assetsPerRow: 1,
+			viewType: 'mobile',
+			web: [
+				{
+					source: '/images/apps/book-shuffle/library.png',
+					alt: 'library',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/book-info.png',
+					alt: 'Book info',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/similar-books.png',
+					alt: 'similar books',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/recently-viewed.png',
+					alt: 'Recently viewed books',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/filter-preferences.png',
+					alt: 'Filter preferences',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/shuffle.png',
+					alt: 'Book shuffle',
+					width: 275,
+					height: 585,
+				},
+				{
+					source: '/images/apps/book-shuffle/result-of-shuffled.png',
+					alt: 'Result of shuffled books',
+					width: 275,
+					height: 585,
+				},
+			],
+			// mobile: [
+			// 	{
+			// 		source: '/images/apps/book-shuffle/library.png',
+			// 		alt: 'library',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/book-info.png',
+			// 		alt: 'Book info',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/similar-books.png',
+			// 		alt: 'similar books',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/recently-viewed.png',
+			// 		alt: 'Recently viewed books',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/filter-preferences.png',
+			// 		alt: 'Filter preferences',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/shuffle.png',
+			// 		alt: 'Book shuffle',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// 	{
+			// 		source: '/images/apps/book-shuffle/result-of-shuffled.png',
+			// 		alt: 'Result of shuffled books',
+			// 		width: 275,
+			// 		height: 585,
+			// 	},
+			// ],
+		},
 	},
 	{
 		id: 'sky-journey',
