@@ -17,7 +17,7 @@ data "aws_iam_policy_document" "external_dns" {
 }
 
 resource "aws_iam_policy" "external_dns" {
-  name        = "external-dns-policy"
+  name        = "${var.project}-External-DNS-Policy"
   description = "Policy for external-dns"
   policy      = data.aws_iam_policy_document.external_dns.json
   path        = "/"
@@ -61,7 +61,7 @@ data "aws_iam_policy_document" "irsa_external_dns_trust_policy_doc" {
 }
 
 resource "aws_iam_role" "external_dns" {
-  name               = "external-dns-role"
+  name               = "${var.project}-External-DNS-Role"
   path               = "/"
   assume_role_policy = data.aws_iam_policy_document.irsa_external_dns_trust_policy_doc.json
 

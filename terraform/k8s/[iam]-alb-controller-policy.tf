@@ -1,7 +1,7 @@
 # https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
 # https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.4.4/docs/install/iam_policy.json
 resource "aws_iam_policy" "alb_controller" {
-  name        = "ALB-Controller-Policy"
+  name        = "${var.project}-ALB-Controller-Policy"
   description = "Policy for ALB controller"
   policy      = file("./resources/node-ingress-policy.json")
   path        = "/"
