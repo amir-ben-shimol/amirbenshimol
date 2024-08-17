@@ -76,7 +76,7 @@ jobs:
               with:
                   name: EKS_CLUSTER_KUBECONFIG
                   value: ${{ steps.terraform-outputs.outputs.EKS_CLUSTER_KUBECONFIG }}
-                  repository: amir-ben-shimol/amirbenshomol
+                  repository: amir-ben-shimol/amirbenshimol
                   token: ${{ secrets.SET_SECRETS_GH_TOKEN }}
 
             - name: Login to Amazon ECR
