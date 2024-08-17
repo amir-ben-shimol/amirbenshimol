@@ -21,13 +21,13 @@ module "vpc_website" {
 
   vpc_tags = {
     Name                            = "${var.project}-VPC-Website",
-    "kubernetes.io/cluster/website" = "shared"
+    "kubernetes.io/cluster/amir-ben-shimol-website" = "shared"
   }
 
   public_subnet_tags = {
     Name = "${var.project}-public-subnet",
     # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.1/deploy/subnet_discovery/#common-tag
-    "kubernetes.io/cluster/website" = "shared"
+    "kubernetes.io/cluster/amir-ben-shimol-website" = "shared"
     # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.1/deploy/subnet_discovery/#public-subnets
     "kubernetes.io/role/elb" = 1
   }
@@ -35,7 +35,7 @@ module "vpc_website" {
   private_subnet_tags = {
     Name = "${var.project}-private-subnet"
     # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.1/deploy/subnet_discovery/#common-tag
-    "kubernetes.io/cluster/website" = "shared"
+    "kubernetes.io/cluster/amir-ben-shimol-website" = "shared"
     # https://kubernetes-sigs.github.io/aws-load-balancer-controller/v2.1/deploy/subnet_discovery/#private-subnets
     "kubernetes.io/role/internal-elb" = 1
   }
