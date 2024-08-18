@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://amirbenshimol.com
+
+# Sitemaps
+Sitemap: https://amirbenshimol.com/sitemap.xml
