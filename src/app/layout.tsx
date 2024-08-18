@@ -82,7 +82,7 @@ export const metadata: Metadata = {
 		locale: 'en_US',
 		images: [
 			{
-				url: '/images/og-image.png',
+				url: '/og-image.png',
 				width: 1200,
 				height: 630,
 				alt: 'Amir Ben Shimol',
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
 		creator: '@amirbenshimol',
 		title: 'Amir Ben Shimol',
 		description: 'Explore the work and expertise of Amir Ben Shimol, a software developer focused on web development.',
-		images: ['/images/og-image.png'],
+		images: ['/og-image.png'],
 	},
 	verification: {
 		google: 'your-google-site-verification-code', // Replace with your actual verification code
