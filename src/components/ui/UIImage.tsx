@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image, { type ImageProps } from 'next/image';
+import Image, { type ImageProps } from 'next/legacy/image';
 import { cn } from '@/utils/class-name';
 
 export const UIImage: React.FC<ImageProps> = (props) => {
