@@ -2,19 +2,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable max-lines */
 'use client';
+
 import { useEffect, useRef, useState } from 'react';
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from 'three';
 import ThreeGlobe from 'three-globe';
-import { useThree, type Object3DNode, Canvas, extend } from '@react-three/fiber';
+import { useThree, Canvas, extend } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import countries from '@/data/globe.json';
-
-declare module '@react-three/fiber' {
-	// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
-	interface ThreeElements {
-		threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
-	}
-}
 
 extend({ ThreeGlobe });
 
@@ -285,8 +279,6 @@ export const World = (props: WorldProps) => {
 };
 
 export function hexToRgb(hex?: string) {
-	console.log('hex input:', hex); // Log the input to see what is being passed
-
 	if (!hex || typeof hex !== 'string') return null;
 
 	const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;

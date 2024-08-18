@@ -12,9 +12,9 @@ type Props = {
 export const metadata: Metadata = {
 	title: {
 		default: '🧀 Amir Ben Shimol',
-		template: '%s | Amir Ben Shimol',
+		template: '🧀 %s | Amir Ben Shimol',
 	},
-	description: 'Welcome to the portfolio website of Amir Ben Shimol, a skilled software developer with expertise in web development fundamentals.',
+	description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 	applicationName: 'Amir Ben Shimol',
 	authors: [{ name: 'Amir Ben Shimol', url: 'https://amirbenshimol.com' }],
 	generator: 'Next.js',
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
 		'HTML',
 	],
 	referrer: 'origin-when-cross-origin',
-
 	creator: 'Amir Ben Shimol',
 	publisher: 'Amir Ben Shimol',
 	robots: {
@@ -52,10 +51,6 @@ export const metadata: Metadata = {
 	},
 	alternates: {
 		canonical: 'https://amirbenshomol.com', // Replace with your actual website URL
-		languages: {
-			'en-US': 'https://amirbenshimol.com/en-US',
-			'he-IL': 'https://amirbenshimol.com/he-IL', // Example for Hebrew, add more if needed
-		},
 	},
 	icons: {
 		icon: '/favicon.ico',
@@ -81,12 +76,12 @@ export const metadata: Metadata = {
 		type: 'website',
 		url: 'https://amirbenshimol.com', // Replace with your actual website URL
 		title: '🧀 Amir Ben Shimol',
-		description: 'Discover the projects and skills of Amir Ben Shimol, a software developer specializing in web development.',
+		description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 		siteName: 'Amir Ben Shimol',
 		locale: 'en_US',
 		images: [
 			{
-				url: 'https://amirbenshimol.com/og-image.jpg', // Replace with your actual image URL
+				url: 'https://amirbenshimol.com/images/og-image.png',
 				width: 1200,
 				height: 630,
 				alt: 'Amir Ben Shimol',
@@ -95,11 +90,11 @@ export const metadata: Metadata = {
 	},
 	twitter: {
 		card: 'summary_large_image',
-		site: '@amirbenshimol', // Replace with your actual Twitter handle
-		creator: '@amirbenshimol', // Replace with your actual Twitter handle
+		site: '@amirbenshimol',
+		creator: '@amirbenshimol',
 		title: 'Amir Ben Shimol',
 		description: 'Explore the work and expertise of Amir Ben Shimol, a software developer focused on web development.',
-		images: ['https://amirbenshimol.com/twitter-image.jpg'], // Replace with your actual image URL
+		images: ['https://amirbenshimol.com/images/og-image.png'],
 	},
 	verification: {
 		google: 'your-google-site-verification-code', // Replace with your actual verification code
@@ -116,8 +111,7 @@ export const metadata: Metadata = {
 		email: false,
 		address: false,
 	},
-	abstract: 'Portfolio of Amir Ben Shimol, a software developer specializing in modern web technologies.',
-
+	abstract: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 	category: 'Portfolio',
 	classification: 'Software Development',
 };
