@@ -11,7 +11,6 @@
 CODEOWNERS
 commitlint.config.cjs
 components.json
-cspell.json
 czvinyl.config.ts
 README.md
 release.config.cjs
