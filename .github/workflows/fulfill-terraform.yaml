@@ -1,14 +1,14 @@
 name: Fulfill Terrafrom
 
 on:
-    workflow_dispatch:
     push:
         branches: [main]
         paths:
-            - terraform/**
-            - .dockerignore
-            - docker/Dockerfile.website-prod
-            - src/**
+            - './terraform/**'
+            - './.dockerignore'
+            - './docker/Dockerfile.website-prod'
+            - './src/**'
+    workflow_dispatch:
 
 jobs:
     fulfill_terraform:
