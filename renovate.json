@@ -31,5 +31,7 @@
 	],
 	"commitMessageAction": "🤖 Update",
 	"stabilityDays": 7,
-	"reviewersFromCodeOwners": true
+	"reviewersFromCodeOwners": true,
+	"prHourlyLimit": 3,
+	"schedule": ["every weekend"]
 }
