@@ -3,7 +3,7 @@ name: Fulfill Terrafrom
 on:
     workflow_dispatch:
     push:
-        branches: [main]
+        branches: [PRODUCTION]
         paths:
             - 'terraform/**'
             - '.dockerignore'
