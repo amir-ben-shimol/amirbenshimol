@@ -15,7 +15,7 @@ type Props = {
 	width?: number;
 	height?: number;
 	quality?: number;
-	layout?: string;
+	layout?: 'fill' | 'fixed' | 'intrinsic' | 'responsive';
 } & ({ isStatic: true; imageSrc: string } | { isStatic?: false; imageSrc?: never });
 
 export const UILinkPreview = ({
@@ -85,7 +85,7 @@ export const UILinkPreview = ({
 					setOpen(open);
 				}}
 			>
-				<HoverCardPrimitive.Trigger className={cn('text-black dark:text-white', className)} href={url} onMouseMove={handleMouseMove}>
+				<HoverCardPrimitive.Trigger className={cn('text-black dark:text-white', className)} href={url} target="_blank" onMouseMove={handleMouseMove}>
 					{children}
 				</HoverCardPrimitive.Trigger>
 
@@ -119,6 +119,7 @@ export const UILinkPreview = ({
 									href={url}
 									className="block rounded-xl border-2 border-transparent bg-white p-1 shadow hover:border-neutral-200 dark:hover:border-neutral-800"
 									style={{ fontSize: 0 }}
+									target="_blank"
 								>
 									<UIImage
 										src={isStatic ? imageSrc : src}
