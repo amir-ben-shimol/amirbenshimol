@@ -7,6 +7,7 @@ const config = {
 			{
 				preset: 'angular',
 				releaseRules: [
+					{ type: 'chore', release: 'minor' },
 					{ type: 'feat', release: 'minor' },
 					{ type: 'fix', release: 'patch' },
 					{ type: 'perf', release: 'patch' },
