@@ -11,8 +11,8 @@ type Props = {
 
 export const metadata: Metadata = {
 	title: {
-		default: '🧀 Amir Ben Shimol',
-		template: '🧀 %s | Amir Ben Shimol',
+		default: 'Amir Ben Shimol',
+		template: '%s | Amir Ben Shimol',
 	},
 	description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 	applicationName: 'Amir Ben Shimol',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 		},
 	},
 	alternates: {
-		canonical: 'https://amirbenshomol.com', // Replace with your actual website URL
+		canonical: 'https://amirbenshomol.com',
 	},
 	icons: {
 		icon: '/favicon.ico',
@@ -71,10 +71,10 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	manifest: 'https://amirbenshimol.com/manifest.json', // Replace with your actual manifest URL
+	manifest: 'https://amirbenshimol.com/manifest.webmanifest',
 	openGraph: {
 		type: 'website',
-		url: 'https://amirbenshimol.com', // Replace with your actual website URL
+		url: 'https://amirbenshimol.com',
 		title: '🧀 Amir Ben Shimol',
 		description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 		siteName: 'Amir Ben Shimol',

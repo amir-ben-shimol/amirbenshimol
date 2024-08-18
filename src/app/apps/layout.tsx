@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-	title: 'About',
+	title: 'Apps',
 	description: 'About Amir Ben Shimol',
 };
 
