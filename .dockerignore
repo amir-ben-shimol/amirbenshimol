@@ -3,7 +3,6 @@
 .next
 .vscode
 .gitattributes
-.gitconfig
 .gitignore
 .git
 .nvmrc
