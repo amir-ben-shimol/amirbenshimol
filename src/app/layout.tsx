@@ -33,7 +33,6 @@ export const metadata: Metadata = {
 		'CSS',
 		'HTML',
 	],
-	referrer: 'origin-when-cross-origin',
 	creator: 'Amir Ben Shimol',
 	publisher: 'Amir Ben Shimol',
 	robots: {
