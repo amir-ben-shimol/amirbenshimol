@@ -10,13 +10,14 @@ type Props = {
 };
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://amirbenshimol.com'),
 	title: {
 		default: 'Amir Ben Shimol',
 		template: '%s | Amir Ben Shimol',
 	},
 	description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 	applicationName: 'Amir Ben Shimol',
-	authors: [{ name: 'Amir Ben Shimol', url: 'https://amirbenshimol.com' }],
+	authors: [{ name: 'Amir Ben Shimol', url: '/' }],
 	generator: 'Next.js',
 	keywords: [
 		'Amir Ben Shimol',
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
 		},
 	},
 	alternates: {
-		canonical: 'https://amirbenshomol.com',
+		canonical: '/',
 	},
 	icons: {
 		icon: '/favicon.ico',
@@ -71,17 +72,17 @@ export const metadata: Metadata = {
 			},
 		],
 	},
-	manifest: 'https://amirbenshimol.com/manifest.webmanifest',
+	manifest: '/manifest.webmanifest',
 	openGraph: {
 		type: 'website',
-		url: 'https://amirbenshimol.com',
+		url: '/',
 		title: '🧀 Amir Ben Shimol',
 		description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',
 		siteName: 'Amir Ben Shimol',
 		locale: 'en_US',
 		images: [
 			{
-				url: 'https://amirbenshimol.com/images/og-image.png',
+				url: '/images/og-image.png',
 				width: 1200,
 				height: 630,
 				alt: 'Amir Ben Shimol',
@@ -94,7 +95,7 @@ export const metadata: Metadata = {
 		creator: '@amirbenshimol',
 		title: 'Amir Ben Shimol',
 		description: 'Explore the work and expertise of Amir Ben Shimol, a software developer focused on web development.',
-		images: ['https://amirbenshimol.com/images/og-image.png'],
+		images: ['/images/og-image.png'],
 	},
 	verification: {
 		google: 'your-google-site-verification-code', // Replace with your actual verification code
