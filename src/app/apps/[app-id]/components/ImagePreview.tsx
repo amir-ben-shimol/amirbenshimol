@@ -1,10 +1,10 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { AnimatePresence, motion } from 'framer-motion';
 import type { ImageType } from '@/types/ui/app';
 import { cn } from '@/utils/class-name';
+import { UIImage } from '@/ui/UIImage';
 
 type Props = {
 	readonly viewType: 'web' | 'mobile';
@@ -17,7 +17,7 @@ const ImagePreview = (props: Props) => {
 
 	return (
 		<>
-			<Image
+			<UIImage
 				className={cn('cursor-pointer', props.viewType === 'mobile' && 'rounded-[48px]')}
 				src={props.webImage.source}
 				alt={props.webImage.alt}
@@ -45,7 +45,7 @@ const ImagePreview = (props: Props) => {
 								)}
 								onClick={(e) => e.stopPropagation()}
 							>
-								<Image
+								<UIImage
 									className="w-full rounded-xl"
 									src={props.mobileImage?.source ?? props.webImage.source}
 									alt={props.mobileImage?.alt ?? props.webImage.alt}

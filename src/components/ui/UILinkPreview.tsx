@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
-import Image from 'next/image';
 import { encode } from 'qss';
 import React from 'react';
 import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
 import Link from 'next/link';
 import { cn } from '@/utils/class-name';
+import { UIImage } from './UIImage';
 
 type Props = {
 	children: React.ReactNode;
@@ -74,7 +74,7 @@ export const UILinkPreview = ({
 		<>
 			{isMounted ? (
 				<div className="hidden">
-					<Image src={src} width={width} height={height} quality={quality} layout={layout} priority alt="hidden image" />
+					<UIImage src={src} width={width} height={height} quality={quality} layout={layout} priority alt="hidden image" />
 				</div>
 			) : null}
 
@@ -120,7 +120,7 @@ export const UILinkPreview = ({
 									className="block rounded-xl border-2 border-transparent bg-white p-1 shadow hover:border-neutral-200 dark:hover:border-neutral-800"
 									style={{ fontSize: 0 }}
 								>
-									<Image
+									<UIImage
 										src={isStatic ? imageSrc : src}
 										width={width}
 										height={height}

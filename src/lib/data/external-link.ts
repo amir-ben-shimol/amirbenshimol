@@ -1,6 +1,6 @@
 import type { ExternalLink } from '@/types/ui/external-link';
 
-export const socialMedia: ExternalLink[] = [
+export const externalLinks: ExternalLink[] = [
 	{
 		label: 'GitHub',
 		url: 'https://github.com/amir-ben-shimol/',
@@ -12,16 +12,5 @@ export const socialMedia: ExternalLink[] = [
 	{
 		label: 'Stack Overflow',
 		url: 'https://stackoverflow.com/users/17767715/amir-ben-shimol',
-	},
-];
-
-export const generalLinks: ExternalLink[] = [
-	{
-		label: 'Interview with yazifland',
-		url: 'https://google.com',
-	},
-	{
-		label: 'Convestation with yazif',
-		url: 'https://google.com',
 	},
 ];

@@ -3,9 +3,8 @@ import dynamic from 'next/dynamic';
 
 import PageWrapper from '@/wrappers/PageWrapper';
 import Intro from './components/Intro';
-import GeneralLinks from './components/GeneralLinks';
 
-const SocialMedia = dynamic(() => import('./components/SocialMedia'), {
+const ExternalLinks = dynamic(() => import('./components/ExternalLinks'), {
 	ssr: false,
 });
 
@@ -13,8 +12,7 @@ const About = () => {
 	return (
 		<PageWrapper className="max-w-[700px]">
 			<Intro />
-			<GeneralLinks />
-			<SocialMedia />
+			<ExternalLinks />
 		</PageWrapper>
 	);
 };

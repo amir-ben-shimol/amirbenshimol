@@ -1,9 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import type { App as TApp } from '@/types/ui/app';
 import { UICardSpotlight } from '@/ui/UICardSpotlight';
 import { routes } from '@/routes/index';
+import { UIImage } from '@/ui/UIImage';
 
 const App = (props: TApp) => {
 	return (
@@ -11,7 +12,7 @@ const App = (props: TApp) => {
 			<Link className="flex flex-col items-center sm:flex-row" href={`${routes.apps.path}/${props.id}`}>
 				<div className="flex w-full gap-3">
 					<div className="z-20 overflow-hidden rounded-3xl sm:p-4">
-						<Image className="h-24 w-36 rounded-lg object-contain sm:h-28 sm:w-32" width={100} height={100} src={props.image} alt={props.title} />
+						<UIImage className="h-24 w-36 rounded-lg object-contain sm:h-28 sm:w-32" width={100} height={100} src={props.image} alt={props.title} />
 					</div>
 					<div className="flex w-full flex-col sm:w-5/6">
 						<h2 className="z-20 mb-0.5 text-xl font-bold sm:text-3xl">{props.title}</h2>

@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useMemo, useRef } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 // import { Modal, ModalBody, ModalContent, ModalTrigger } from '@/ui/UIAnimatedModal';
@@ -9,6 +8,7 @@ import { useParams } from 'next/navigation';
 import { cn } from '@/utils/class-name';
 import { appsList } from '@/data/apps';
 import { UISvg } from '@/ui/UISvg';
+import { UIImage } from '@/ui/UIImage';
 import ImagePreview from './ImagePreview';
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
 		<div className="flex w-full flex-col items-center">
 			<div className="flex h-[calc(100vh-260px)] w-full flex-col items-center">
 				<div className="mb-3 overflow-hidden rounded-[48px]">
-					<Image src={app.image} alt={app.title} width={224} height={224} />
+					<UIImage src={app.image} alt={app.title} width={224} height={224} />
 				</div>
 				<h1 className="leading-tighter font-heading mb-4 text-center text-5xl font-bold tracking-tighter md:text-6xl">{app.title}</h1>
 				<h2 className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.description}</h2>
