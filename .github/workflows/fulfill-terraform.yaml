@@ -4,10 +4,10 @@ on:
     push:
         branches: [main]
         paths:
-            - './terraform/**'
-            - './.dockerignore'
-            - './docker/Dockerfile.website-prod'
-            - './src/**'
+            - 'terraform/**'
+            - '.dockerignore'
+            - 'docker/Dockerfile.website-prod'
+            - 'src/**'
     workflow_dispatch:
 
 jobs:
