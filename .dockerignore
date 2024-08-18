@@ -2,16 +2,13 @@
 .husky
 .next
 .vscode
-.gitattributes
 .gitignore
 .git
 .nvmrc
 .prettierignore
 .prettierrc.cjs
 CODEOWNERS
-commitlint.config.cjs
 components.json
-czvinyl.config.ts
 README.md
 release.config.cjs
 renovate.json
