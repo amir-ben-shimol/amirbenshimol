@@ -18,7 +18,7 @@ const ImagePreview = (props: Props) => {
 	return (
 		<>
 			<UIImage
-				className={cn('cursor-pointer', props.viewType === 'mobile' && 'rounded-[48px]')}
+				className={cn('cursor-pointer', props.viewType === 'mobile' ? 'rounded-[48px]' : 'rounded-md')}
 				src={props.webImage.source}
 				alt={props.webImage.alt}
 				width={props.webImage.width}
