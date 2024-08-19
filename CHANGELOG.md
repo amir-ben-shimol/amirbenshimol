@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.9.0...v1.10.0) (2024-08-19)
+
+
+### Features
+
+* Add Next.js vs. React blog post ([6f52c3e](https://github.com/amir-ben-shimol/amirbenshimol/commit/6f52c3e19d4e28539c50261bed979c5f4d01193f))
+
 # [1.9.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.8.0...v1.9.0) (2024-08-19)
 
 # [1.8.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.7.0...v1.8.0) (2024-08-19)
