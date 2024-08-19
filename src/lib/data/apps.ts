@@ -55,7 +55,7 @@ export const appsList: App[] = [
 		id: 'book-shuffle',
 		title: 'Book Shuffle',
 		description: 'Mobile app to discover and shuffle reading lists',
-		image: '/images/apps/book-shuffle/logo.png',
+		image: '/images/apps/book-shuffle/logo.jpg',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB',
