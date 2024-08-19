@@ -12,7 +12,7 @@ type Props = {
 export const metadata: Metadata = {
 	metadataBase: new URL('https://amirbenshimol.com'),
 	title: {
-		default: 'Amir Ben Shimol',
+		default: 'Amir Ben Shimol | Software Developer',
 		template: '%s | Amir Ben Shimol',
 	},
 	description: 'Portfolio website of Amir Ben Shimol, a software developer specializing in modern web technologies.',

@@ -10,7 +10,6 @@ export type App = {
 };
 
 type Assets = {
-	readonly assetsPerRow: number;
 	readonly viewType: 'web' | 'mobile';
 	readonly web: ImageType[];
 	readonly mobile?: ImageType[];

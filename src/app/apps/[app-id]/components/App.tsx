@@ -36,8 +36,8 @@ const App = () => {
 	return (
 		<div className="flex w-full flex-col items-center">
 			<div className="flex h-[calc(100vh-260px)] w-full flex-col items-center">
-				<div className="mb-3 overflow-hidden rounded-[48px]">
-					<UIImage src={app.image} alt={app.title} width={224} height={224} />
+				<div className="mb-6 overflow-hidden rounded-[48px]">
+					<UIImage className="rounded-[48px]" src={app.image} alt={app.title} width={224} height={224} />
 				</div>
 				<h1 className="leading-tighter font-heading mb-4 text-center text-5xl font-bold tracking-tighter md:text-6xl">{app.title}</h1>
 				<h2 className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.description}</h2>
@@ -80,7 +80,7 @@ const App = () => {
 						<div
 							key={index}
 							className={cn(
-								'bg-slate-950 p-2 shadow-[0_0_20px_5px_rgba(128,128,128,0.6)] dark:shadow-[0_0_20px_5px_rgba(255,255,255,0.4)]',
+								'flex bg-slate-950 p-2 shadow-[0_0_20px_5px_rgba(128,128,128,0.6)] dark:shadow-[0_0_20px_5px_rgba(255,255,255,0.4)]',
 								app.assets!.viewType === 'mobile' ? 'mx-auto rounded-[58px]' : 'rounded-xl',
 							)}
 						>
