@@ -133,13 +133,13 @@ export const appsList: App[] = [
 			viewType: 'web',
 			web: [
 				{
-					source: '/images/apps/skyjourney/intro.webp',
+					source: '/images/apps/skyjourney/intro.png',
 					alt: 'Intro',
 					width: 1277,
 					height: 828,
 				},
 				{
-					source: '/images/apps/skyjourney/steps.webp',
+					source: '/images/apps/skyjourney/steps.png',
 					alt: 'Sharing steps',
 					width: 1277,
 					height: 828,
@@ -176,13 +176,13 @@ export const appsList: App[] = [
 			viewType: 'web',
 			web: [
 				{
-					source: '/images/apps/kynesis/dashboard.webp',
+					source: '/images/apps/kynesis/dashboard.png',
 					alt: 'Intro',
 					width: 1535,
 					height: 980,
 				},
 				{
-					source: '/images/apps/kynesis/visitors-insights.webp',
+					source: '/images/apps/kynesis/visitors-insights.png',
 					alt: 'Google Earth drawing',
 					width: 1535,
 					height: 980,
@@ -229,19 +229,19 @@ export const appsList: App[] = [
 			viewType: 'web',
 			web: [
 				{
-					source: '/images/apps/aviv-shiloh/intro.webp',
+					source: '/images/apps/aviv-shiloh/intro.png',
 					alt: 'Intro page',
 					width: 1510,
 					height: 1345,
 				},
 				{
-					source: '/images/apps/aviv-shiloh/gallery.webp',
+					source: '/images/apps/aviv-shiloh/gallery.png',
 					alt: 'Still gallery',
 					width: 1510,
 					height: 1345,
 				},
 				{
-					source: '/images/apps/aviv-shiloh/info.webp',
+					source: '/images/apps/aviv-shiloh/info.png',
 					alt: 'Info page',
 					width: 1510,
 					height: 1345,
