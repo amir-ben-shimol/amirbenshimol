@@ -1,3 +1,5 @@
+# [1.16.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.15.0...v1.16.0) (2024-08-21)
+
 # [1.15.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.14.0...v1.15.0) (2024-08-20)
 
 # [1.14.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.13.0...v1.14.0) (2024-08-20)
