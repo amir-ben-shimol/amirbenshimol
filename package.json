@@ -45,7 +45,8 @@
 		"tailwind-merge": "2.5.2",
 		"tailwindcss-animate": "1.0.7",
 		"three": "0.167.1",
-		"three-globe": "2.31.1"
+		"three-globe": "2.31.1",
+		"ts-mock-api": "1.0.5"
 	},
 	"devDependencies": {
 		"@exlint.io/inflint": "2.1.1",
