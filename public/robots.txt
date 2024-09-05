@@ -1,5 +1,9 @@
-# *
+# Allow all bots
 User-agent: *
+Allow: /
+
+# Explicitly allow DuckDuckBot
+User-agent: DuckDuckBot
 Allow: /
 
 # Host
