@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.17.0...v1.18.0) (2024-09-19)
+
+
+### Features
+
+* Add ts-mock-api package ([3023c86](https://github.com/amir-ben-shimol/amirbenshimol/commit/3023c863835a3d34b847124509ec4ad45234690f))
+
 # [1.17.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.16.0...v1.17.0) (2024-09-05)
 
 # [1.16.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.15.0...v1.16.0) (2024-08-21)
