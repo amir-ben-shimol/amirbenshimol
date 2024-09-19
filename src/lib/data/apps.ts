@@ -117,6 +117,20 @@ export const appsList: App[] = [
 		},
 	},
 	{
+		id: 'ts-mock-api',
+		title: 'TS Mock API',
+		description: 'npm package to create a mock API server',
+		image: '/images/apps/ts-mock-api/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
+			'https://img.shields.io/npm/dw/ts-mock-api',
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+		],
+		link: 'https://www.npmjs.com/package/ts-mock-api',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/ts-mock-api',
+	},
+	{
 		id: 'sky-journey',
 		title: 'Sky Journey',
 		description: 'Web app to visualize drone flight data',
