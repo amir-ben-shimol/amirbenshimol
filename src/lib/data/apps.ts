@@ -119,53 +119,16 @@ export const appsList: App[] = [
 	{
 		id: 'ts-mock-api',
 		title: 'TS Mock API',
-		description: 'npm package to create a mock API server',
+		description: 'npm package to create a mock data based on ts schema',
 		image: '/images/apps/ts-mock-api/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
-			'https://img.shields.io/npm/dw/ts-mock-api',
+			'https://img.shields.io/npm/dm/ts-mock-api?logo=NPM',
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
 		],
 		link: 'https://www.npmjs.com/package/ts-mock-api',
 		sourceCodeLink: 'https://github.com/amir-ben-shimol/ts-mock-api',
-	},
-	{
-		id: 'sky-journey',
-		title: 'Sky Journey',
-		description: 'Web app to visualize drone flight data',
-		image: '/images/apps/skyjourney/logo.png',
-		metadata: [
-			'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
-			'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
-			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
-			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
-		],
-		link: 'https://www.skyjourneyapp.com',
-		sourceCodeLink: 'https://github.com/amir-ben-shimol/sky-journey',
-		assets: {
-			viewType: 'web',
-			web: [
-				{
-					source: '/images/apps/skyjourney/intro.png',
-					alt: 'Intro',
-					width: 1277,
-					height: 828,
-				},
-				{
-					source: '/images/apps/skyjourney/steps.png',
-					alt: 'Sharing steps',
-					width: 1277,
-					height: 828,
-				},
-				{
-					source: '/images/apps/skyjourney/google-earth.png',
-					alt: 'Google Earth drawing',
-					width: 943,
-					height: 466,
-				},
-			],
-		},
 	},
 	{
 		id: 'kynesis-dashboard',
@@ -224,6 +187,43 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
 		],
 		sourceCodeLink: 'https://github.com/Exlint/dashboard',
+	},
+	{
+		id: 'sky-journey',
+		title: 'Sky Journey',
+		description: 'Web app to visualize drone flight data',
+		image: '/images/apps/skyjourney/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black',
+			'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
+			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+		],
+		link: 'https://www.skyjourneyapp.com',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/sky-journey',
+		assets: {
+			viewType: 'web',
+			web: [
+				{
+					source: '/images/apps/skyjourney/intro.png',
+					alt: 'Intro',
+					width: 1277,
+					height: 828,
+				},
+				{
+					source: '/images/apps/skyjourney/steps.png',
+					alt: 'Sharing steps',
+					width: 1277,
+					height: 828,
+				},
+				{
+					source: '/images/apps/skyjourney/google-earth.png',
+					alt: 'Google Earth drawing',
+					width: 943,
+					height: 466,
+				},
+			],
+		},
 	},
 	{
 		id: 'aviv-shiloh-portfolio',
