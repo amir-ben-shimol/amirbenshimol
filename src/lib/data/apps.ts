@@ -117,6 +117,21 @@ export const appsList: App[] = [
 		},
 	},
 	{
+		id: 'intro-cli',
+		title: 'intro-cli',
+		description: 'Fully customizable CLI tool that helps onboard developers by displaying project guidelines',
+		image: '/images/apps/intro-cli/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
+			'https://img.shields.io/npm/dm/intro-cli?logo=NPM',
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+			'https://img.shields.io/badge/CLI-black?style=for-the-badge&logo=terminal&logoColor=white',
+		],
+		link: 'https://www.npmjs.com/package/intro-cli',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/intro-cli',
+	},
+	{
 		id: 'cnb',
 		title: 'cnb',
 		description: 'CLI tool that helps developers to create Git branches following naming conventions',
