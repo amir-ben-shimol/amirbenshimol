@@ -38,7 +38,7 @@
 		"nextjs-toploader": "1.6.12",
 		"qss": "3.0.0",
 		"react": "18.3.1",
-		"react-syntax-highlighter": "15.5.0",
+		"react-syntax-highlighter": "15.6.1",
 		"remark": "15.0.1",
 		"remark-gfm": "4.0.0",
 		"sharp": "0.33.5",
