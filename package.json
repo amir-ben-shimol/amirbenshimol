@@ -29,7 +29,7 @@
 		"@react-three/drei": "9.109.5",
 		"@react-three/fiber": "8.17.10",
 		"@tailwindcss/typography": "0.5.14",
-		"@types/three": "0.167.1",
+		"@types/three": "0.170.0",
 		"clsx": "2.1.1",
 		"framer-motion": "11.3.24",
 		"next": "14.2.5",
@@ -44,7 +44,7 @@
 		"sharp": "0.33.5",
 		"tailwind-merge": "2.5.2",
 		"tailwindcss-animate": "1.0.7",
-		"three": "0.167.1",
+		"three": "0.170.0",
 		"three-globe": "2.31.1",
 		"ts-mock-api": "1.0.5"
 	},
