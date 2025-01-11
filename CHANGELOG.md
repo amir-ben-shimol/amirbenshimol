@@ -1,3 +1,11 @@
+# [1.22.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.21.0...v1.22.0) (2025-01-11)
+
+
+### Features
+
+* add long description to app details and include Plans Master app ([403c31f](https://github.com/amir-ben-shimol/amirbenshimol/commit/403c31f0123fa41fde63027a1d20072b263e791c))
+* enhance app details display and add personal portfolio entry ([2c9130b](https://github.com/amir-ben-shimol/amirbenshimol/commit/2c9130b7c6ab09af9e682c643724cd062d022aba))
+
 # [1.21.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.20.0...v1.21.0) (2024-09-25)
 
 # [1.20.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.19.0...v1.20.0) (2024-09-23)
