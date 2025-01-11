@@ -221,6 +221,22 @@ export const appsList: App[] = [
 		},
 	},
 	{
+		id: 'amir-ben-shimol-portfolio',
+		title: 'This Website',
+		description: 'Personal portfolio website',
+		image: '/android-chrome-512x512.png',
+		metadata: [
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
+			'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
+			'https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white',
+			'https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white',
+			'https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white',
+			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
+		],
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/amirbenshimol',
+	},
+	{
 		id: 'exlint-dashboard',
 		title: 'Exlint Dashboard',
 		description: 'An open-source SaaS product following best practices',

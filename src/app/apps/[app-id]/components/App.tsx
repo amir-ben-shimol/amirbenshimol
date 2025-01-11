@@ -40,8 +40,11 @@ const App = () => {
 					<UIImage className="rounded-3xl sm:rounded-[48px]" src={app.image} alt={app.title} layout="fill" objectFit="cover" />
 				</div>
 				<h1 className="leading-tighter font-heading mb-4 text-center text-5xl font-bold tracking-tighter md:text-6xl">{app.title}</h1>
-				<h2 className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.description}</h2>
-				{app.longDescription && <p className="mb-8 text-center text-sm tracking-tight md:text-lg">{app.longDescription}</p>}
+				{app.longDescription ? (
+					<p className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.longDescription}</p>
+				) : (
+					<h2 className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.description}</h2>
+				)}
 				<div className="mt-4 flex flex-col items-center gap-4 xs:flex-row sm:mt-6">
 					{app.sourceCodeLink && (
 						<Link
