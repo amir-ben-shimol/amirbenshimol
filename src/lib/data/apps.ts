@@ -3,6 +3,28 @@ import type { App } from '@/types/ui/app';
 
 export const appsList: App[] = [
 	{
+		id: 'plans-master',
+		title: 'Plans Master',
+		description: 'Platform to streamline collaboration among engineering teams',
+		longDescription:
+			'Plans Master is a robust platform designed to streamline collaboration among engineering teams by centralizing construction plans. It enables groups of engineers to share, manage, and version control construction plans efficiently. The platform supports role-based access control, ensuring that project members have appropriate permissions, and tracks changes to maintain the integrity of project documents.',
+		image: '/images/apps/plans-master/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white',
+			'https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white',
+			'https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white',
+			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
+			'https://img.shields.io/badge/nestjs-E0234E?style=for-the-badge&logo=nestjs&logoColor=white',
+			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+			'https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white',
+			'https://img.shields.io/badge/Tor_Browser-7D4698?style=for-the-badge&logo=Tor-Browser&logoColor=white',
+			'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
+		],
+		link: 'https://plansmaster.net/',
+	},
+	{
 		id: 'friendly-senior',
 		title: 'Friendly Senior',
 		description: 'GitHub app to review pull requests',
