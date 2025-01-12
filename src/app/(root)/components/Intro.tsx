@@ -29,6 +29,14 @@ const Intro = () => {
 				</Link>
 
 				<Link
+					href="/apps"
+					className="z-20 flex w-full items-center justify-center gap-2 rounded-full bg-green-600 px-3 py-1 hover:bg-green-800 sm:w-fit sm:px-8 sm:py-3"
+				>
+					<UISvg name="apps" className="h-5 w-5" />
+					<span className="text-lg text-white sm:text-xl">Apps</span>
+				</Link>
+
+				<Link
 					href="https://www.linkedin.com/in/amir-ben-shimol-533169210/"
 					target="_blank"
 					className="z-20 flex w-full items-center justify-center gap-2 rounded-full bg-blue-800 px-3 py-1 hover:bg-blue-950 sm:w-fit sm:px-8 sm:py-3"
