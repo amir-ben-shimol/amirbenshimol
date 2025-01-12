@@ -1,3 +1,10 @@
+# [1.23.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.22.0...v1.23.0) (2025-01-12)
+
+
+### Features
+
+* add back button and enhance app details layout with new links ([bc042a2](https://github.com/amir-ben-shimol/amirbenshimol/commit/bc042a2d2210335d36c9d699d12f3e1aca5f767e))
+
 # [1.22.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.21.0...v1.22.0) (2025-01-11)
 
 

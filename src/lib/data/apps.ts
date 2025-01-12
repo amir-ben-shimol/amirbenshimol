@@ -7,7 +7,7 @@ export const appsList: App[] = [
 		title: 'Plans Master',
 		description: 'Platform to streamline collaboration among engineering teams',
 		longDescription:
-			'Plans Master is a robust platform designed to streamline collaboration among engineering teams by centralizing construction plans. It enables groups of engineers to share, manage, and version control construction plans efficiently. The platform supports role-based access control, ensuring that project members have appropriate permissions, and tracks changes to maintain the integrity of project documents.',
+			'Plans Master is a robust platform designed to streamline collaboration among engineering teams by centralizing construction plans.\n\nIt enables groups of engineers to share, manage, and version control construction plans efficiently.\n\nThe platform supports role-based access control, ensuring that project members have appropriate permissions, and tracks changes to maintain the integrity of project documents.',
 		image: '/images/apps/plans-master/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',

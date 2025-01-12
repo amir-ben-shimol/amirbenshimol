@@ -35,13 +35,20 @@ const App = () => {
 
 	return (
 		<div className="flex w-full flex-col items-center">
-			<div className="flex h-[calc(100vh-260px)] w-full flex-col items-center">
+			<div className="flex w-full flex-col items-center">
 				<div className="relative mb-6 h-[112px] w-[112px] sm:h-[192px] sm:w-[192px]">
 					<UIImage className="rounded-3xl sm:rounded-[48px]" src={app.image} alt={app.title} layout="fill" objectFit="cover" />
 				</div>
 				<h1 className="leading-tighter font-heading mb-4 text-center text-5xl font-bold tracking-tighter md:text-6xl">{app.title}</h1>
 				{app.longDescription ? (
-					<p className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.longDescription}</p>
+					<p className="text mb-8 mt-4 text-left text-2xl tracking-tight md:text-3xl">
+						{app.longDescription.split('\n').map((line, index) => (
+							<React.Fragment key={index}>
+								{line}
+								<br />
+							</React.Fragment>
+						))}
+					</p>
 				) : (
 					<h2 className="mb-8 text-center text-2xl tracking-tight md:text-3xl">{app.description}</h2>
 				)}

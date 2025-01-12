@@ -5,7 +5,7 @@ import App from './components/App';
 
 const AppPage = () => {
 	return (
-		<PageWrapper className="relative flex justify-center">
+		<PageWrapper className="relative flex justify-center" navBack>
 			<App />
 		</PageWrapper>
 	);
