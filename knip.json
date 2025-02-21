@@ -2,6 +2,7 @@
 	"$schema": "./node_modules/knip/schema.json",
 	"entry": "src/**/*",
 	"ignore": ["next-env.d.ts", "release.config.cjs", "@types/**/*", "inflint.config.cjs"],
+	"ignoreBinaries": ["serve"],
 	"ignoreDependencies": ["hygen", "postcss-nesting", "remark", "sharp", "ts-mock-api"],
 	"project": ["./src/**/*"]
 }

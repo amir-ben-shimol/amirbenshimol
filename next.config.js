@@ -13,6 +13,7 @@ const nextConfig = {
 		reactRemoveProperties: true,
 	},
 	images: {
+		unoptimized: true,
 		remotePatterns: [
 			{
 				protocol: 'https',
@@ -22,6 +23,7 @@ const nextConfig = {
 		],
 	},
 	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+	output: 'export',
 };
 
 /** @type {import('@next/mdx').NextMDXOptions} */
