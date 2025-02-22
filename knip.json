@@ -3,6 +3,6 @@
 	"entry": "src/**/*",
 	"ignore": ["next-env.d.ts", "release.config.cjs", "@types/**/*", "inflint.config.cjs"],
 	"ignoreBinaries": ["serve"],
-	"ignoreDependencies": ["hygen", "postcss-nesting", "remark", "sharp", "ts-mock-api"],
+	"ignoreDependencies": ["hygen", "postcss-nesting", "remark", "sharp", "ts-mock-api", "serve"],
 	"project": ["./src/**/*"]
 }
