@@ -1,3 +1,10 @@
+## [1.26.3](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.2...v1.26.3) (2025-02-22)
+
+
+### Bug Fixes
+
+* update TypeScript documentation link and adjust icon fill color; improve text color for better visibility ([a674155](https://github.com/amir-ben-shimol/amirbenshimol/commit/a67415500c52ef16fffe51066b87ae66f62b0102))
+
 ## [1.26.2](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.1...v1.26.2) (2025-02-22)
 
 
