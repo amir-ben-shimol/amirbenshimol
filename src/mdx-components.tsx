@@ -7,7 +7,7 @@ export const useMDXComponents = (components: MDXComponents): MDXComponents => {
 	const { theme } = useTheme();
 
 	return {
-		img: ({ src }) => <img className="my-3" src={src} alt="" />,
+		img: ({ src }) => <img className="my-3" src={src} alt="mdx" />,
 		code: ({ children, className }) => {
 			const match = /language-(\w+)/.exec(className || '');
 
