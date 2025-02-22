@@ -1,3 +1,10 @@
+## [1.26.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.0...v1.26.1) (2025-02-22)
+
+
+### Bug Fixes
+
+* add alt text to img component in MDX ([2046945](https://github.com/amir-ben-shimol/amirbenshimol/commit/204694501f6c93fb2b08547536c26e1be9447539))
+
 # [1.26.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.25.0...v1.26.0) (2025-02-22)
 
 # [1.25.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.24.0...v1.25.0) (2025-02-22)
