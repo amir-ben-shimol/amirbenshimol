@@ -1,0 +1,52 @@
+name: AWS deploy app
+
+on:
+    push:
+        branches:
+            - main
+        paths:
+            - src/**
+            - public/**
+
+jobs:
+    deploy:
+        name: Deploy app to AWS
+        runs-on: ubuntu-latest
+        environment: ${{ github.workflow }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version-file: '.nvmrc'
+
+            - uses: pnpm/action-setup@v3
+              with:
+                  run_install: true
+
+            - name: Configure AWS credentials
+              uses: aws-actions/configure-aws-credentials@v4
+              env:
+                  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: ${{ vars.AWS_REGION }}
+
+            - name: Build app
+              run: pnpm build
+
+            - name: Deploy to S3 and invalidate Cloudfront
+              uses: reggionick/s3-deploy@v4
+              with:
+                  folder: ./out
+                  bucket: ${{ secrets.APP_S3_BUCKET_NAME }}
+                  bucket-region: ${{ vars.AWS_REGION }}
+                  dist-id: ${{ secrets.APP_CLOUDFRONT_DISTRIBUTION_ID }}
+                  invalidation: /
+                  delete-removed: true
+                  private: true
+                  files-to-include: '**/*'

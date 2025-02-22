@@ -1,4 +1,0 @@
-serviceAccount:
-    create: false
-policy: sync
-domainFilters: ['amirbenshimol.com']
