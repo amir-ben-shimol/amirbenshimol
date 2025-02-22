@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://amirbenshimol.com/contact</loc><lastmod>2024-08-18T19:18:09.250Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://amirbenshimol.com/blog</loc><lastmod>2024-08-18T19:18:09.253Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://amirbenshimol.com/apps</loc><lastmod>2024-08-18T19:18:09.253Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://amirbenshimol.com/about</loc><lastmod>2024-08-18T19:18:09.253Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://amirbenshimol.com</loc><lastmod>2024-08-18T19:18:09.253Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com</loc><lastmod>2025-02-22T11:25:09.645Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/about</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/contact</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/amir-ben-shimol-portfolio</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/aviv-shiloh-portfolio</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/book-shuffle</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/cnb</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/exlint-dashboard</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/friendly-senior</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/intro-cli</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/kynesis-dashboard</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/plans-master</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/sky-journey</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/spring-productions</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps/ts-mock-api</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/apps</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/blog</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/blog/css-scss-vs-tailwind-when-to-use-what</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://amirbenshimol.com/blog/nextjs-vs-react-when-to-use-what</loc><lastmod>2025-02-22T11:25:09.646Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
