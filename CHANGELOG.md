@@ -1,3 +1,10 @@
+## [1.26.2](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.1...v1.26.2) (2025-02-22)
+
+
+### Bug Fixes
+
+* update comment to clarify configuration of GitHub action secrets in backend.tf ([0ebb2e2](https://github.com/amir-ben-shimol/amirbenshimol/commit/0ebb2e27a99d34c83c2d9dce300d9c282156adb6))
+
 ## [1.26.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.0...v1.26.1) (2025-02-22)
 
 
