@@ -1,3 +1,11 @@
+# [1.28.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.27.0...v1.28.0) (2025-03-06)
+
+
+### Features
+
+* add demo video for Mingling app ([c67fdc7](https://github.com/amir-ben-shimol/amirbenshimol/commit/c67fdc7aa36f6180562a9bc4501020e68a2cf42e))
+* add video preview component and integrate with app assets; update app list with new entries ([828b8f8](https://github.com/amir-ben-shimol/amirbenshimol/commit/828b8f8455804182f6db1a68c16f201fbf470c8f))
+
 # [1.27.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.3...v1.27.0) (2025-03-03)
 
 
