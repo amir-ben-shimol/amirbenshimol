@@ -21,4 +21,5 @@ export type ImageType = {
 	readonly alt: string;
 	readonly width: number;
 	readonly height: number;
+	readonly type?: 'image' | 'video';
 };

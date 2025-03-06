@@ -1,3 +1,41 @@
+# [1.28.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.27.0...v1.28.0) (2025-03-06)
+
+
+### Features
+
+* add demo video for Mingling app ([c67fdc7](https://github.com/amir-ben-shimol/amirbenshimol/commit/c67fdc7aa36f6180562a9bc4501020e68a2cf42e))
+* add video preview component and integrate with app assets; update app list with new entries ([828b8f8](https://github.com/amir-ben-shimol/amirbenshimol/commit/828b8f8455804182f6db1a68c16f201fbf470c8f))
+
+# [1.27.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.3...v1.27.0) (2025-03-03)
+
+
+### Features
+
+* add Plans Box app with updated metadata and new logo; remove intro-cli and cnb entries ([119ea1e](https://github.com/amir-ben-shimol/amirbenshimol/commit/119ea1e9d98c67eb2226dd52e76d0ca5eee556c8))
+
+## [1.26.3](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.2...v1.26.3) (2025-02-22)
+
+
+### Bug Fixes
+
+* update TypeScript documentation link and adjust icon fill color; improve text color for better visibility ([a674155](https://github.com/amir-ben-shimol/amirbenshimol/commit/a67415500c52ef16fffe51066b87ae66f62b0102))
+
+## [1.26.2](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.1...v1.26.2) (2025-02-22)
+
+
+### Bug Fixes
+
+* update comment to clarify configuration of GitHub action secrets in backend.tf ([0ebb2e2](https://github.com/amir-ben-shimol/amirbenshimol/commit/0ebb2e27a99d34c83c2d9dce300d9c282156adb6))
+
+## [1.26.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.0...v1.26.1) (2025-02-22)
+
+
+### Bug Fixes
+
+* add alt text to img component in MDX ([2046945](https://github.com/amir-ben-shimol/amirbenshimol/commit/204694501f6c93fb2b08547536c26e1be9447539))
+
+# [1.26.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.25.0...v1.26.0) (2025-02-22)
+
 # [1.25.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.24.0...v1.25.0) (2025-02-22)
 
 # [1.24.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.23.0...v1.24.0) (2025-02-22)

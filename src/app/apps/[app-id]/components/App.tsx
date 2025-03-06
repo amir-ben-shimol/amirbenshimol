@@ -10,6 +10,7 @@ import { appsList } from '@/data/apps';
 import { UISvg } from '@/ui/UISvg';
 import { UIImage } from '@/ui/UIImage';
 import ImagePreview from './ImagePreview';
+import VideoPreview from './VideoPreview';
 
 const App = () => {
 	const params = useParams();
@@ -95,7 +96,11 @@ const App = () => {
 								app.assets!.viewType === 'mobile' ? 'mx-auto rounded-[58px]' : 'rounded-xl',
 							)}
 						>
-							<ImagePreview webImage={image} mobileImage={app.assets!.mobile?.[index]} viewType={app.assets!.viewType} />
+							{image.type === 'video' ? (
+								<VideoPreview webVideo={image} mobileVideo={app.assets!.mobile?.[index]} viewType={app.assets!.viewType} />
+							) : (
+								<ImagePreview webImage={image} mobileImage={app.assets!.mobile?.[index]} viewType={app.assets!.viewType} />
+							)}
 						</div>
 					))}
 				</div>

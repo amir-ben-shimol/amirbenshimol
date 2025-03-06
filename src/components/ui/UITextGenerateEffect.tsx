@@ -35,7 +35,7 @@ export const UITextGenerateEffect = ({ words, className, filter = true, duration
 					return (
 						<motion.span
 							key={word + idx}
-							className="text-center text-xl font-light text-gray-400 sm:text-3xl"
+							className="text-center text-xl font-light text-gray-600 dark:text-gray-400 sm:text-3xl"
 							style={{
 								filter: filter ? 'blur(10px)' : 'none',
 							}}
