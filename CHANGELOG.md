@@ -1,3 +1,10 @@
+# [1.29.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.28.0...v1.29.0) (2025-03-06)
+
+
+### Features
+
+* remove intro-cli and update cnb app entry; add Redis badge to metadata ([f2b9871](https://github.com/amir-ben-shimol/amirbenshimol/commit/f2b98716641f7de327d6294a2600ade9d24a72bc))
+
 # [1.28.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.27.0...v1.28.0) (2025-03-06)
 
 
