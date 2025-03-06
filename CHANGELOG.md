@@ -1,3 +1,10 @@
+# [1.27.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.3...v1.27.0) (2025-03-03)
+
+
+### Features
+
+* add Plans Box app with updated metadata and new logo; remove intro-cli and cnb entries ([119ea1e](https://github.com/amir-ben-shimol/amirbenshimol/commit/119ea1e9d98c67eb2226dd52e76d0ca5eee556c8))
+
 ## [1.26.3](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.26.2...v1.26.3) (2025-02-22)
 
 
