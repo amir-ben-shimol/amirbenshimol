@@ -12,7 +12,7 @@ export function generateStaticParams() {
 
 const AppPage = () => {
 	return (
-		<PageWrapper className="relative flex justify-center" navBack>
+		<PageWrapper className="relative flex justify-center">
 			<App />
 		</PageWrapper>
 	);

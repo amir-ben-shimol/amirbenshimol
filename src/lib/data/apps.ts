@@ -46,22 +46,22 @@ export const appsList: App[] = [
 		id: 'mingling',
 		title: 'Mingling',
 		description: 'A microservices-based streaming platform enabling real-time peer-to-peer and group video collaboration.',
-		longDescription: `Mingling is a scalable streaming platform built with a microservices architecture that decouples functionalities into independent services such as the API gateway, friend, notification, and user management. Each service is designed to be deployed and scaled independently, ensuring high performance and reliability for large-scale deployments.
-	
-	The mobile experience is powered by React Native, leveraging WebRTC for low-latency peer-to-peer video calls and Socket.io for seamless real-time messaging. Built with Node.js, Docker, RabbitMQ, and Redis, Mingling integrates robust backend technologies while utilizing Expo and Fastlane for streamlined mobile development. Local video assets are stored under /data/videos for testing and demos.`,
+		longDescription: `Mingling is a scalable, microservices-based video streaming platform featuring independent services for API gateway, user management, friend handling, and notifications. Built with Node.js, Docker, RabbitMQ, and Redis, it supports efficient backend performance and scalability.
+
+The mobile client uses React Native, Expo, and Fastlane, incorporating WebRTC for real-time peer-to-peer video streaming and Socket.io for live messaging.`,
 		image: '/images/apps/mingling/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
 			'https://img.shields.io/badge/React_Native-61DAFB?style=for-the-badge&logo=react&logoColor=white',
 			'https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white',
+			'https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white',
 			'https://img.shields.io/badge/TypeScript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
 			'https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white',
-			'https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white',
+			'https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white',
 			'https://img.shields.io/badge/API%20Gateway-000000?style=for-the-badge&logo=nginx&logoColor=white',
 			'https://img.shields.io/badge/Microservices-4B0082?style=for-the-badge&logo=microservices&logoColor=white',
 			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
 			'https://img.shields.io/badge/Fastlane-000000?style=for-the-badge&logo=fastlane&logoColor=white',
-			'https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socketdotio&logoColor=white',
 			'https://img.shields.io/badge/WebRTC-1E90FF?style=for-the-badge&logo=webrtc&logoColor=white',
 		],
 		sourceCodeLink: 'https://github.com/amir-ben-shimol/mingling',
@@ -74,6 +74,7 @@ export const appsList: App[] = [
 					width: 1440,
 					height: 1024,
 					type: 'video',
+					poster: '/images/apps/mingling/poster.png',
 				},
 			],
 			mobile: [
@@ -83,24 +84,10 @@ export const appsList: App[] = [
 					width: 1440,
 					height: 1024,
 					type: 'video',
+					poster: '/images/apps/mingling/poster.png',
 				},
 			],
 		},
-	},
-	{
-		id: 'intro-cli',
-		title: 'intro-cli',
-		description: 'Fully customizable CLI tool that helps onboard developers by displaying project guidelines',
-		image: '/images/apps/intro-cli/logo.png',
-		metadata: [
-			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
-			'https://img.shields.io/npm/dm/intro-cli?logo=NPM',
-			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
-			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
-			'https://img.shields.io/badge/CLI-black?style=for-the-badge&logo=terminal&logoColor=white',
-		],
-		link: 'https://www.npmjs.com/package/intro-cli',
-		sourceCodeLink: 'https://github.com/amir-ben-shimol/intro-cli',
 	},
 	{
 		id: 'friendly-senior',
@@ -151,6 +138,22 @@ export const appsList: App[] = [
 			],
 		},
 	},
+	{
+		id: 'intro-cli',
+		title: 'intro-cli',
+		description: 'Fully customizable CLI tool that helps onboard developers by displaying project guidelines',
+		image: '/images/apps/intro-cli/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
+			'https://img.shields.io/npm/dm/intro-cli?logo=NPM',
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+			'https://img.shields.io/badge/CLI-black?style=for-the-badge&logo=terminal&logoColor=white',
+		],
+		link: 'https://www.npmjs.com/package/intro-cli',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/intro-cli',
+	},
+
 	{
 		id: 'book-shuffle',
 		title: 'Book Shuffle',

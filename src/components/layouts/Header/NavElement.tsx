@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import { cn } from '@/utils/class-name';
 import type { NavElement as NavElementType } from '@/types/ui/navigation';
@@ -17,14 +17,21 @@ type Props = {
 
 const NavElement = (props: Props) => {
 	const pathname = usePathname();
+	const router = useRouter();
 	const isActive = pathname.includes(props.path);
 
 	if (props.path === routes.home.path) {
+		const isViewingApp = pathname.includes('/apps/');
+
 		return (
 			<Link className={props.className} href={props.path}>
 				<span className="text-2xl font-bold text-slate-700 dark:text-slate-200 sm:text-3xl">
 					{pathname === routes.home.path ? (
 						'🧀'
+					) : isViewingApp ? (
+						<button type="button" className="" onClick={() => router.back()}>
+							<UISvg name="arrow" className="h-8 w-8" />
+						</button>
 					) : (
 						<>
 							<span className="block xs:hidden">Amir</span>

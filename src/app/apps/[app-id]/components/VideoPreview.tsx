@@ -4,21 +4,12 @@ import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { cn } from '@/utils/class-name';
 import { UISvg } from '@/ui/UISvg';
+import type { ImageType } from '@/types/ui/app';
 
 type Props = {
 	readonly viewType: 'web' | 'mobile';
-	readonly webVideo: {
-		source: string;
-		alt: string;
-		width: number;
-		height: number;
-	};
-	readonly mobileVideo?: {
-		source: string;
-		alt: string;
-		width: number;
-		height: number;
-	};
+	readonly webVideo: ImageType;
+	readonly mobileVideo?: ImageType;
 };
 
 const VideoPreview = (props: Props) => {
@@ -30,9 +21,9 @@ const VideoPreview = (props: Props) => {
 				<video
 					className={cn(props.viewType === 'mobile' ? 'rounded-[48px]' : 'rounded-md')}
 					src={props.webVideo.source}
-					width={props.webVideo.width}
-					height={props.webVideo.height}
+					style={{ width: '100%', height: '100%', objectFit: 'cover' }}
 					preload="metadata"
+					poster={props.webVideo.poster}
 				/>
 				<div className="absolute inset-0 flex items-center justify-center">
 					<UISvg name="play" className="h-20 w-20" />

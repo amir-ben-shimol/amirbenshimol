@@ -22,4 +22,5 @@ export type ImageType = {
 	readonly width: number;
 	readonly height: number;
 	readonly type?: 'image' | 'video';
+	readonly poster?: string;
 };
