@@ -1,3 +1,10 @@
+# [1.30.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.29.0...v1.30.0) (2025-03-07)
+
+
+### Features
+
+* add video poster support and update Mingling app metadata ([229cd45](https://github.com/amir-ben-shimol/amirbenshimol/commit/229cd458e0c4ded6e5001719580145446137ddf6))
+
 # [1.29.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.28.0...v1.29.0) (2025-03-06)
 
 
