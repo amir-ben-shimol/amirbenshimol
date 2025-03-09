@@ -15,7 +15,7 @@ type Props = {
 	readonly appId: string;
 };
 
-const App: React.FC<Props> = ({ appId }) => {
+const App = ({ appId }: Props) => {
 	const assetsRef = useRef<HTMLDivElement>(null);
 
 	const app = useMemo(() => {
