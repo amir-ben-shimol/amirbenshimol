@@ -1,3 +1,10 @@
+## [1.33.6](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.5...v1.33.6) (2025-03-09)
+
+
+### Bug Fixes
+
+* update lastmod timestamps in sitemap.xml for consistency ([73384b0](https://github.com/amir-ben-shimol/amirbenshimol/commit/73384b0bb86d38b596e97510237140c49c72f226))
+
 ## [1.33.5](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.4...v1.33.5) (2025-03-09)
 
 
