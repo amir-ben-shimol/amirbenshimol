@@ -1,3 +1,11 @@
+## [1.33.3](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.2...v1.33.3) (2025-03-09)
+
+
+### Bug Fixes
+
+* remove trailing slash from apps link and update sitemap entries ([b51c436](https://github.com/amir-ben-shimol/amirbenshimol/commit/b51c436429fe1ef134104c39abdbcfc1f47c3bbe))
+* update CDN error response code to 302 and set error caching TTL to 0 ([cf22481](https://github.com/amir-ben-shimol/amirbenshimol/commit/cf22481fa0fadd2cec695232cfd4ab49cac2672d))
+
 ## [1.33.2](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.1...v1.33.2) (2025-03-09)
 
 
