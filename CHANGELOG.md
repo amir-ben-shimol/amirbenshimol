@@ -1,3 +1,10 @@
+## [1.33.2](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.1...v1.33.2) (2025-03-09)
+
+
+### Bug Fixes
+
+* update href for apps link to include trailing slash ([48be74f](https://github.com/amir-ben-shimol/amirbenshimol/commit/48be74f31ee0426c92a988eb687d271329eba2d6))
+
 ## [1.33.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.0...v1.33.1) (2025-03-09)
 
 
