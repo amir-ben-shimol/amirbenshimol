@@ -1,3 +1,10 @@
+## [1.33.5](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.4...v1.33.5) (2025-03-09)
+
+
+### Bug Fixes
+
+* update CDN error response code to 404 and set response page path to /404.html ([5816028](https://github.com/amir-ben-shimol/amirbenshimol/commit/58160282295ec0fe7cf1b1830791d5e903095b1f))
+
 ## [1.33.4](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.3...v1.33.4) (2025-03-09)
 
 
