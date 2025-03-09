@@ -1,8 +1,10 @@
-import { redirect } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { routes } from '@/routes/index';
 
 const NotFoundLayout = () => {
-	redirect(routes.home.path);
+	const router = useRouter();
+
+	router.replace(routes.home.path);
 };
 
 export default NotFoundLayout;
