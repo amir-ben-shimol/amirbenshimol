@@ -46,7 +46,6 @@ module "app_cdn" {
       error_code         = 404
       response_code      = 302
       response_page_path = "/index.html"
-      error_caching_min_ttl = 0
     }
   ]
 
