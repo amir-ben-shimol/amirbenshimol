@@ -1,3 +1,10 @@
+# [1.33.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.32.0...v1.33.0) (2025-03-09)
+
+
+### Features
+
+* enable trailing slash in Next.js config and refactor App component props ([dcfd9e4](https://github.com/amir-ben-shimol/amirbenshimol/commit/dcfd9e40146da7dae1ce0c2bbe43e5b797c71c56))
+
 # [1.32.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.31.0...v1.32.0) (2025-03-09)
 
 
