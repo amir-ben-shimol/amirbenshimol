@@ -1,3 +1,10 @@
+## [1.33.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.0...v1.33.1) (2025-03-09)
+
+
+### Bug Fixes
+
+* wrap router.replace in useEffect to prevent immediate execution in NotFoundLayout ([e5d3e0a](https://github.com/amir-ben-shimol/amirbenshimol/commit/e5d3e0a7c79e70f7d4e8691d5685e860aefe6502))
+
 # [1.33.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.32.0...v1.33.0) (2025-03-09)
 
 
