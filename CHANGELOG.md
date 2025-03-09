@@ -1,3 +1,11 @@
+# [1.31.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.30.0...v1.31.0) (2025-03-09)
+
+
+### Features
+
+* reorder and restore 'cnb' and 'ts-mock-api' entries in apps list ([bc25c41](https://github.com/amir-ben-shimol/amirbenshimol/commit/bc25c41cd932e3e2e11b7f8a859c440a2e95dfc0))
+* update demo video for Mingling app ([1328288](https://github.com/amir-ben-shimol/amirbenshimol/commit/1328288dedd04790cd265ccdd2b2c25650ff03dc))
+
 # [1.30.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.29.0...v1.30.0) (2025-03-07)
 
 
