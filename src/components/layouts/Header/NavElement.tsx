@@ -29,7 +29,7 @@ const NavElement = (props: Props) => {
 					{pathname === routes.home.path ? (
 						'🧀'
 					) : isViewingApp ? (
-						<button type="button" className="" onClick={() => router.back()}>
+						<button type="button" onClick={() => router.push(routes.apps.path)}>
 							<UISvg name="arrow" className="h-8 w-8" />
 						</button>
 					) : (

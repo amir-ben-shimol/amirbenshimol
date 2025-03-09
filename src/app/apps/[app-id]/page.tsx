@@ -1,5 +1,6 @@
-import React from 'react';
+// app/apps/[app-id]/page.tsx
 
+import React from 'react';
 import PageWrapper from '@/wrappers/PageWrapper';
 import { appsList } from '@/data/apps';
 import App from './components/App';
@@ -10,10 +11,16 @@ export function generateStaticParams() {
 	}));
 }
 
-const AppPage = () => {
+type AppPageProps = {
+	params: {
+		'app-id': string;
+	};
+};
+
+const AppPage = ({ params }: AppPageProps) => {
 	return (
 		<PageWrapper className="relative flex justify-center">
-			<App />
+			<App appId={params['app-id']} />
 		</PageWrapper>
 	);
 };
