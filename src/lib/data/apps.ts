@@ -28,21 +28,6 @@ export const appsList: App[] = [
 		link: 'https://plansbox.org/',
 	},
 	{
-		id: 'cnb',
-		title: 'cnb',
-		description: 'CLI tool that helps developers to create Git branches following naming conventions',
-		image: '/images/apps/ts-mock-api/logo.png',
-		metadata: [
-			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
-			'https://img.shields.io/npm/dm/cnb?logo=NPM',
-			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
-			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
-			'https://img.shields.io/badge/CLI-black?style=for-the-badge&logo=terminal&logoColor=white',
-		],
-		link: 'https://www.npmjs.com/package/cnb',
-		sourceCodeLink: 'https://github.com/amir-ben-shimol/cnb',
-	},
-	{
 		id: 'mingling',
 		title: 'Mingling',
 		description: 'A microservices-based streaming platform enabling real-time peer-to-peer and group video collaboration.',
@@ -88,6 +73,21 @@ The mobile client uses React Native, Expo, and Fastlane, incorporating WebRTC fo
 				},
 			],
 		},
+	},
+	{
+		id: 'cnb',
+		title: 'cnb',
+		description: 'CLI tool that helps developers to create Git branches following naming conventions',
+		image: '/images/apps/ts-mock-api/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
+			'https://img.shields.io/npm/dm/cnb?logo=NPM',
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+			'https://img.shields.io/badge/CLI-black?style=for-the-badge&logo=terminal&logoColor=white',
+		],
+		link: 'https://www.npmjs.com/package/cnb',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/cnb',
 	},
 	{
 		id: 'friendly-senior',
@@ -219,22 +219,6 @@ The mobile client uses React Native, Expo, and Fastlane, incorporating WebRTC fo
 			],
 		},
 	},
-
-	{
-		id: 'ts-mock-api',
-		title: 'TS Mock API',
-		description: 'npm package to create a mock data based on ts schema',
-		image: '/images/apps/ts-mock-api/logo.png',
-		metadata: [
-			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
-			'https://img.shields.io/npm/dm/ts-mock-api?logo=NPM',
-			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
-			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
-			'https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white',
-		],
-		link: 'https://www.npmjs.com/package/ts-mock-api',
-		sourceCodeLink: 'https://github.com/amir-ben-shimol/ts-mock-api',
-	},
 	{
 		id: 'kynesis-dashboard',
 		title: 'Kynesis Dashboard',
@@ -344,6 +328,21 @@ The mobile client uses React Native, Expo, and Fastlane, incorporating WebRTC fo
 				},
 			],
 		},
+	},
+	{
+		id: 'ts-mock-api',
+		title: 'TS Mock API',
+		description: 'npm package to create a mock data based on ts schema',
+		image: '/images/apps/ts-mock-api/logo.png',
+		metadata: [
+			'https://img.shields.io/badge/npm-white?logo=npm&logoColor=white&labelColor=red',
+			'https://img.shields.io/npm/dm/ts-mock-api?logo=NPM',
+			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white',
+			'https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white',
+		],
+		link: 'https://www.npmjs.com/package/ts-mock-api',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/ts-mock-api',
 	},
 	{
 		id: 'aviv-shiloh-portfolio',
