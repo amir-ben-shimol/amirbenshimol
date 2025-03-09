@@ -1,3 +1,10 @@
+## [1.33.4](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.3...v1.33.4) (2025-03-09)
+
+
+### Bug Fixes
+
+* remove error caching TTL setting from CDN configuration ([74197ac](https://github.com/amir-ben-shimol/amirbenshimol/commit/74197ac7cfa87c5ef2c68f7b8761cdd2276dc614))
+
 ## [1.33.3](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.2...v1.33.3) (2025-03-09)
 
 
