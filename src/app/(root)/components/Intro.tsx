@@ -29,7 +29,7 @@ const Intro = () => {
 				</Link>
 
 				<Link
-					href="/apps"
+					href="/apps/"
 					className="z-20 flex w-full items-center justify-center gap-2 rounded-full bg-green-600 px-3 py-1 hover:bg-green-800 sm:w-fit sm:px-8 sm:py-3"
 				>
 					<UISvg name="apps" className="h-5 w-5" />
