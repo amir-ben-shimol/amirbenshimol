@@ -24,7 +24,6 @@ const nextConfig = {
 	},
 	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 	output: 'export',
-	trailingSlash: true,
 };
 
 /** @type {import('@next/mdx').NextMDXOptions} */
