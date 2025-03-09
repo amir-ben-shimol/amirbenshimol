@@ -2,7 +2,7 @@
 
 import React, { useMemo, useRef } from 'react';
 import Link from 'next/link';
-// import { Modal, ModalBody, ModalContent, ModalTrigger } from '@/ui/UIAnimatedModal';
+import { useParams } from 'next/navigation';
 
 import { cn } from '@/utils/class-name';
 import { appsList } from '@/data/apps';
@@ -11,12 +11,11 @@ import { UIImage } from '@/ui/UIImage';
 import ImagePreview from './ImagePreview';
 import VideoPreview from './VideoPreview';
 
-type Props = {
-	readonly appId: string;
-};
-
-const App = ({ appId }: Props) => {
+const App = () => {
+	const params = useParams();
 	const assetsRef = useRef<HTMLDivElement>(null);
+
+	const appId = Array.isArray(params?.['app-id']) ? params['app-id'][0] : params?.['app-id'];
 
 	const app = useMemo(() => {
 		return appsList.find((app) => app.id === appId);
