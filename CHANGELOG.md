@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.31.0...v1.32.0) (2025-03-09)
+
+
+### Features
+
+* update sitemap and refactor app components for improved routing ([a318639](https://github.com/amir-ben-shimol/amirbenshimol/commit/a3186391a67f19e567071b22f267621a33941e0a))
+
 # [1.31.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.30.0...v1.31.0) (2025-03-09)
 
 
