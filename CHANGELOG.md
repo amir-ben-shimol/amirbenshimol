@@ -1,3 +1,11 @@
+## [1.33.7](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.6...v1.33.7) (2025-03-11)
+
+
+### Bug Fixes
+
+* update app link and add missing badge for React ([a0f2960](https://github.com/amir-ben-shimol/amirbenshimol/commit/a0f29608c0e3fa91688ff019ccfb5993a27c030a))
+* update custom error response for 404 to redirect to index.html ([da1faa7](https://github.com/amir-ben-shimol/amirbenshimol/commit/da1faa7e1bbe62d16237939323828481212498cd))
+
 ## [1.33.6](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.5...v1.33.6) (2025-03-09)
 
 
