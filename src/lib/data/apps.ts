@@ -25,7 +25,7 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white',
 			'https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white',
 		],
-		link: 'https://plansbox.org/',
+		link: 'https://app.plansbox.org/',
 	},
 	{
 		id: 'mingling',
@@ -263,11 +263,11 @@ The mobile client uses React Native, Expo, and Fastlane, incorporating WebRTC fo
 		image: '/android-chrome-512x512.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
+			'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
 			'https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white',
 			'https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white',
 			'https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white',
 			'https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white',
-			'https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white',
 			'https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white',
 		],
 		sourceCodeLink: 'https://github.com/amir-ben-shimol/amirbenshimol',
