@@ -36,18 +36,18 @@ module "app_cdn" {
 
   default_root_object = "index.html"
 
-  custom_error_response = [
-    {
-      error_code         = 403
-      response_code      = 200
-      response_page_path = "/index.html"
-    },
-    {
-      error_code         = 404
-      response_code      = 404
-      response_page_path = "/404.html"
-    }
-  ]
+custom_error_response = [
+  {
+    error_code         = 403
+    response_code      = 200
+    response_page_path = "/index.html"
+  },
+  {
+    error_code         = 404
+    response_code      = 200
+    response_page_path = "/index.html"
+  }
+]
 
   viewer_certificate = {
     acm_certificate_arn = module.acm_cloudfront.acm_certificate_arn
