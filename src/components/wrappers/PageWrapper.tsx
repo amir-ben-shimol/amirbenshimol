@@ -10,8 +10,8 @@ type Props = {
 
 const PageWrapper = (props: Props) => {
 	return (
-		<section className={cn('flex-cols flex h-full w-full justify-center overflow-auto px-8 pb-6 pt-36', props.wrapperClassName)}>
-			<div className={cn('h-fit w-full max-w-[700px]', props.className)}>
+		<section className={cn('flex-cols flex h-full w-full justify-center px-8 pb-6 pt-36', props.wrapperClassName)}>
+			<div className={cn('w-full max-w-[700px]', props.className)}>
 				{props.navBack && <UIBackButton />}
 				{props.children}
 			</div>
