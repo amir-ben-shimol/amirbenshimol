@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const ContactLayout = (props: Props) => {
-	return <BaseLayout>{props.children}</BaseLayout>;
+	return <BaseLayout className="h-full">{props.children}</BaseLayout>;
 };
 
 export default ContactLayout;

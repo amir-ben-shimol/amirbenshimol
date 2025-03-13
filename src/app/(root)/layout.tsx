@@ -5,7 +5,11 @@ type Props = {
 };
 
 const RootLayout = (props: Props) => {
-	return <BaseLayout>{props.children}</BaseLayout>;
+	return (
+		<BaseLayout className="h-full" floatingFooter>
+			{props.children}
+		</BaseLayout>
+	);
 };
 
 export default RootLayout;

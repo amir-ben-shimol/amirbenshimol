@@ -2,6 +2,8 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 
 import PageTransitionWrapper from '@/wrappers/PageTransitionWrapper';
+import { cn } from '@/utils/class-name';
+import { Footer } from './Footer';
 
 const Header = dynamic(() => import('./Header'), {
 	ssr: false,
@@ -9,15 +11,18 @@ const Header = dynamic(() => import('./Header'), {
 
 type PageProps = {
 	readonly children: React.ReactNode;
+	readonly className?: string;
+	readonly floatingFooter?: boolean;
 };
 
 const BaseLayout = (props: PageProps) => {
 	return (
 		<>
 			<Header />
-			<section className="flex h-full w-full flex-col overflow-hidden">
+			<section className={cn('flex w-full flex-col', props.className)}>
 				<PageTransitionWrapper>{props.children}</PageTransitionWrapper>
 			</section>
+			<Footer floating={props.floatingFooter} />
 		</>
 	);
 };
