@@ -1,0 +1,165 @@
+On "localhost", everything is instant. On production, your application might be slow. On simple SPA, all pages are already downloaded on client-end browser once user enters your website. This behavior may lead to slow loading of your website (cold boot), if it is very big one. In these scenarios, "lazy loading" technique is used, to prevent a user from downloading all pages at once, although some might be irrelevant for the user. But- this technique leads to screen flickering - when a user navigates, you need to wait the browser to load your lazy-loaded route, while you see a blank screen.
+
+What if lazy-loading a route might take 2-3 seconds? You want to show a loading progress in the top of the browser window (YouTube-like), while showing the current loaded page. These scenarios occur when you want to preload some data before user reaches the page, for example. Instead of showing blank screen while we preload some data, we will show progress bar with current loaded page, and then navigate.
+
+## Solution
+
+We still use the lazy loading technique, but with some adjustments. When a user navigates, **before leaving** the current loaded route, we will show the progress bar first. Then, we start downloading the route-to-be-loaded (instead of showing blank screen until loaded) and (optional) preload some data required by the to-be-navigated page from our server. Once the download completes (and data is fetched) successfully, we stop the progress bar and actually navigate.
+We can "delay" the navigation by using the `loader` feature of React Router: https://reactrouter.com/en/main/route/loader. This allows us the do anything we want, and only when completing the action, actually navigate.
+
+Begin with wrapping your app with `RouterProvider` component:
+
+```tsx
+import React, { useMemo } from 'react';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+
+import RouterBuilder from './App.router';
+
+interface IProps {
+	readonly isAuthenticated: boolean | null;
+}
+
+const AppView: React.FC<IProps> = (props: React.PropsWithChildren<IProps>) => {
+	const routes = useMemo(() => RouterBuilder(props.isAuthenticated), [props.isAuthenticated]);
+
+	return <RouterProvider router={createBrowserRouter(routes)} />;
+};
+
+AppView.displayName = 'AppView';
+AppView.defaultProps = {};
+
+export default React.memo(AppView);
+```
+
+In this snippet, we want to build the routes dependent on the authentication status of the user, to use "route guards" mechanism. We are using `RouterProvider` to enable the `loader` feature of `react-router-dom` package.
+
+In the `RouteBuilder` we return the available routes for the user, dependent on his authentication status. We have 3 statuses:
+
+1. General routes - for unauthorized & authorized user.
+2. Unauthorized user routes
+3. Authorized user routes
+
+```tsx
+import React from 'react';
+import type { RouteObject } from 'react-router-dom';
+
+import AppLayout from './App.layout';
+import BackendService from './services/backend';
+import { endProgress, startProgress } from './services/progress-bar';
+
+const Auth = React.lazy(() => import('./pages/Auth'));
+const ExternalAuthRedirect = React.lazy(() => import('./pages/ExternalAuthRedirect'));
+const ComplianceCenter = React.lazy(() => import('./pages/ComplianceCenter'));
+
+const RouterBuilder = (isAuthenticated: boolean | null) => {
+	const unAuthorizedRoutes: RouteObject[] = [
+		{
+			path: '',
+			element: <Auth />,
+			loader: async () => {
+				startProgress();
+
+				await import('./pages/Auth');
+
+				endProgress();
+
+				return null;
+			},
+		},
+		{
+			path: 'auth',
+			element: <Auth />,
+			loader: async () => {
+				startProgress();
+
+				await import('./pages/Auth');
+
+				endProgress();
+
+				return null;
+			},
+		},
+	];
+
+	const authorizedRoutes: RouteObject[] = [
+		{
+			path: '',
+			element: <ComplianceCenter />,
+			loader: async () => {
+				startProgress();
+
+				await Promise.all([BackendService.preload('/user/compliances'), import('./pages/ComplianceCenter')]);
+
+				endProgress();
+
+				return null;
+			},
+		},
+	];
+
+	const generalRoutes: RouteObject[] = [
+		{
+			path: 'external-auth-redirect',
+			element: <ExternalAuthRedirect />,
+		},
+	];
+
+	let routesChildren = generalRoutes;
+
+	if (isAuthenticated) {
+		routesChildren = [...authorizedRoutes, ...generalRoutes];
+	}
+
+	if (isAuthenticated === false) {
+		routesChildren = [...unAuthorizedRoutes, ...generalRoutes];
+	}
+
+	const routes: RouteObject[] = [
+		{
+			element: <AppLayout />,
+			children: routesChildren,
+		},
+	];
+
+	return routes;
+};
+
+export default RouterBuilder;
+```
+
+For the `<ComplianceCenter />` we also preload some data from the server (reference: https://swr.vercel.app/docs/prefetching).
+
+The `AppLayout` should render your actual website, by using the `Outlet` component:
+
+```tsx
+import React, { Suspense } from 'react';
+import { Outlet } from 'react-router-dom';
+
+import EDNotification from '@/ui/EDNotification';
+
+interface IProps {}
+
+const AppLayout: React.FC<IProps> = () => {
+	return (
+		<Suspense fallback={null}>
+			<Outlet />
+
+			<div id="backdrop-root" />
+			<div id="overlay-root" />
+
+			<EDNotification />
+		</Suspense>
+	);
+};
+
+AppLayout.displayName = 'AppLayout';
+AppLayout.defaultProps = {};
+
+export default React.memo(AppLayout);
+```
+
+We are using `fallback` with `null` value, as we don't need a fallback for routes navigation (in this technique we still show the current loaded page, and only then navigate). In that case, at cold boot, a blank screen will show. You could set here some loader, but remember it will be relevant only for cold boot, when website is first loaded.
+
+---
+
+Code repository demo: https://github.com/Exlint/dashboard (`apps/frontend`).
