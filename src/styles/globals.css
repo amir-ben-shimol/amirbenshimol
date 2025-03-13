@@ -34,6 +34,8 @@
 		--ring: 142.1 76.2% 36.3%;
 
 		--radius: 0.5rem;
+
+		--page-background: #f2f6fa;
 	}
 
 	.dark {
@@ -64,6 +66,7 @@
 		--border: 240 3.7% 15.9%;
 		--input: 240 3.7% 15.9%;
 		--ring: 142.4 71.8% 29.2%;
+		--page-background: #020617;
 	}
 }
 
@@ -93,11 +96,14 @@
 	}
 
 	html {
+		@apply text-foreground;
+		background-color: var(--page-background);
 		width: 100vw;
 		height: 100%;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply text-foreground;
+		background-color: var(--page-background);
 		height: 100%;
 		margin: 0;
 		direction: ltr;
