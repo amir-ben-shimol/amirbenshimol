@@ -1,3 +1,16 @@
+# [1.34.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.7...v1.34.0) (2025-03-13)
+
+
+### Bug Fixes
+
+* remove unnecessary overflow properties from layout components ([4e01a7a](https://github.com/amir-ben-shimol/amirbenshimol/commit/4e01a7aeb1c68bb1f22b50a1cdd06ac7ecb1785c))
+
+
+### Features
+
+* add blog post on creating YouTube-like loader in React routing ([7887171](https://github.com/amir-ben-shimol/amirbenshimol/commit/7887171980d259b2da4a64f965e80b2675c33b60))
+* enhance layout components with floating footer support ([a8e61a2](https://github.com/amir-ben-shimol/amirbenshimol/commit/a8e61a22c97bbe5b0d929796eca06e0f199e3c97))
+
 ## [1.33.7](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.6...v1.33.7) (2025-03-11)
 
 
