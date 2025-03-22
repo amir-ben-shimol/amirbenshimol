@@ -1,3 +1,10 @@
+## [1.35.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.35.0...v1.35.1) (2025-03-22)
+
+
+### Bug Fixes
+
+* remove floating footer from AboutLayout and adjust BaseLayout styles ([9a3be7d](https://github.com/amir-ben-shimol/amirbenshimol/commit/9a3be7db932be4179350c0738141470f969116b5))
+
 # [1.35.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.34.0...v1.35.0) (2025-03-13)
 
 
