@@ -1,3 +1,10 @@
+# [1.35.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.34.0...v1.35.0) (2025-03-13)
+
+
+### Features
+
+* update footer visibility and improve global styles with background variables ([b83d9d1](https://github.com/amir-ben-shimol/amirbenshimol/commit/b83d9d194633632714d519f0ada769cbc6b3224e))
+
 # [1.34.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.33.7...v1.34.0) (2025-03-13)
 
 
