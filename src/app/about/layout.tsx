@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const AboutLayout = (props: Props) => {
-	return <BaseLayout floatingFooter>{props.children}</BaseLayout>;
+	return <BaseLayout>{props.children}</BaseLayout>;
 };
 
 export default AboutLayout;

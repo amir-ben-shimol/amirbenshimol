@@ -19,7 +19,7 @@ const BaseLayout = (props: PageProps) => {
 	return (
 		<>
 			<Header />
-			<section className={cn('flex w-full flex-col', props.className)}>
+			<section className={cn('flex w-full flex-col min-h-[calc(100%-50px)]', props.className)}>
 				<PageTransitionWrapper>{props.children}</PageTransitionWrapper>
 			</section>
 			<Footer floating={props.floatingFooter} />
