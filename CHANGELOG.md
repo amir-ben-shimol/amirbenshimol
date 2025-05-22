@@ -1,3 +1,5 @@
+# [1.36.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.35.1...v1.36.0) (2025-05-22)
+
 ## [1.35.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.35.0...v1.35.1) (2025-03-22)
 
 
