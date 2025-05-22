@@ -14,7 +14,7 @@ const Intro = () => {
 				as="div"
 				className="z-20 flex items-center justify-center bg-white p-0 text-black dark:bg-black dark:text-white"
 			>
-				<UIImage src="/images/profile.jpg" alt="Profile Picture" width={150} height={150} className="z-20 rounded-full" />
+				<UIImage src="/images/profile.png" alt="Profile Picture" width={150} height={150} className="z-20 rounded-full" />
 			</UIHoverBorderGradient>
 			<UIGradienteText as="h1">Amir Ben Shimol</UIGradienteText>
 			<UITextGenerateEffect className="z-20" words="Software Developer & Open-Sourcerer" />
