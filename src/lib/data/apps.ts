@@ -4,10 +4,10 @@ import type { App } from '@/types/ui/app';
 export const appsList: App[] = [
 	{
 		id: 'plans-box',
-		title: 'Plans Box',
+		title: 'ConstructShare',
 		description: 'Platform to streamline collaboration among teams',
 		longDescription:
-			'Plans Box is a robust platform designed to streamline collaboration among engineering teams by centralizing construction plans.\n\nIt enables groups of engineers to share, manage, and version control construction plans efficiently.\n\nThe platform supports role-based access control, ensuring that project members have appropriate permissions, and tracks changes to maintain the integrity of project documents.',
+			'ConstructShare is a robust platform designed to streamline collaboration among engineering teams by centralizing construction plans.\n\nIt enables groups of engineers to share, manage, and version control construction plans efficiently.\n\nThe platform supports role-based access control, ensuring that project members have appropriate permissions, and tracks changes to maintain the integrity of project documents.',
 		image: '/images/apps/plans-box/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
@@ -25,7 +25,7 @@ export const appsList: App[] = [
 			'https://img.shields.io/badge/React%20Native-61DAFB?style=for-the-badge&logo=react&logoColor=white',
 			'https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white',
 		],
-		link: 'https://app.plansbox.org/',
+		sourceCodeLink: 'https://github.com/amir-ben-shimol/constructshare',
 	},
 	{
 		id: 'mingling',
