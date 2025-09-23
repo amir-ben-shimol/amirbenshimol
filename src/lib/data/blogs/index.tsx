@@ -1,10 +1,19 @@
 import type { Blog } from '@/types/ui/blog';
 
 import CssScssVsTailwindWhenToUseWhat from './content/css-scss-vs-tailwind-when-to-use-what.mdx';
+import LocalstackSimulateAwsProductionEnvironmentLocally from './content/localstack-simulate-aws-production-environment-locally.mdx';
 import NextJsVsReactWhenToUseWhat from './content/nextjs-vs-react-when-to-use-what.mdx';
 import ReactCreateYoutubeLikeLoaderWhenRoutingWithoutScreenFlickering from './content/react-create-youtube-like-loader-when-routing-without-screen-flickering.mdx';
 
 export const blogs: Blog[] = [
+	{
+		id: 'localstack-simulate-aws-production-environment-locally',
+		title: 'LocalStack: Simulate AWS Production Environment Locally',
+		description: 'Run local AWS services to simulate production environment using the same Terraform files',
+		date: new Date('2025-09-23'),
+		readingTime: '12 min read',
+		contentElement: <LocalstackSimulateAwsProductionEnvironmentLocally />,
+	},
 	{
 		id: 'react-create-youtube-like-loader-when-routing-without-screen-flickering',
 		title: 'React: Create YouTube-like loader when routing without screen flickering',
