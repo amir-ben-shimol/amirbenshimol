@@ -1,3 +1,10 @@
+# [1.41.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.40.0...v1.41.0) (2025-09-23)
+
+
+### Features
+
+* add new blog post on using LocalStack to simulate AWS production environment locally ([65ed7bc](https://github.com/amir-ben-shimol/amirbenshimol/commit/65ed7bc9d9fd125c513c345a272bf7e349b027d6))
+
 # [1.40.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.39.0...v1.40.0) (2025-09-02)
 
 # [1.39.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.38.0...v1.39.0) (2025-06-15)
