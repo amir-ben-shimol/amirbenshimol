@@ -5,9 +5,9 @@ export const appsList: App[] = [
 	{
 		id: 'plans-box',
 		title: 'ConstructShare',
-		description: 'Platform to streamline collaboration among teams',
+		description: 'File management and collaboration platform for engineering projects',
 		longDescription:
-			'ConstructShare is a production-ready construction project management platform showcasing enterprise-level full-stack development. It features PayPal payments, JWT authentication, AWS S3 integration, and Docker containerization.\n\nThe platform enables groups of engineers to share, manage, and version control construction plans efficiently to collaborate on construction plans with role-based access control, document versioning, and real-time synchronization.\n\nDemonstrates expertise in modern web technologies, mobile development, cloud infrastructure, payment systems, and DevOps practices - delivering a scalable solution for construction industry collaboration.',
+			'ConstructShare is a production-ready platform that helps engineering teams manage and share project files efficiently. It supports role-based access, version history, real-time updates, and built-in payment and invoicing features.\n\nUnder the hood, it runs on a scalable full-stack setup with secure authentication, payments, email workflows, cloud storage, and infrastructure managed via Terraform. The entire system is containerized for local development with a production-like environment, ensuring smooth deployment and scale.',
 		image: '/images/apps/plans-box/logo.png',
 		metadata: [
 			'https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white',
