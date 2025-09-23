@@ -27,7 +27,11 @@ const Blog = () => {
 				<span className="text-sm text-gray-400 sm:text-base">{blog.readingTime}</span>
 			</div>
 			<h2 className="mb-1 text-2xl font-bold sm:mb-3 sm:text-5xl">{blog.title}</h2>
-			<span className="mb-10 max-w-[600px] text-center text-lg text-gray-400 sm:text-xl">{blog.description}</span>
+			<div className="mb-10 w-full max-w-4xl">
+				<p className="border-l-4 border-blue-500 bg-blue-50 py-3 pl-4 text-lg font-medium italic text-gray-700 dark:bg-blue-900/20 dark:text-gray-300 sm:text-xl">
+					{blog.description}
+				</p>
+			</div>
 			<div className="w-[100%]">{blog.contentElement}</div>
 		</div>
 	);
