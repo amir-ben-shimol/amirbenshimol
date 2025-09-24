@@ -153,11 +153,6 @@
 		background-position: 0% 50%;
 	}
 }
-
-::-webkit-scrollbar {
-	width: 80px;
-}
-
 ::-webkit-scrollbar-track {
 	background: rgb(var(--blueSecondery));
 }
