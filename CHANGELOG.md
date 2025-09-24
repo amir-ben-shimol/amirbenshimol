@@ -1,3 +1,10 @@
+## [1.41.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.41.0...v1.41.1) (2025-09-24)
+
+
+### Bug Fixes
+
+* adjust globe height in contact page for better layout consistency ([a92c1ec](https://github.com/amir-ben-shimol/amirbenshimol/commit/a92c1ecb6cd02cd706c279177910a4396240116f))
+
 # [1.41.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.40.0...v1.41.0) (2025-09-23)
 
 
