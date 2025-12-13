@@ -1,3 +1,5 @@
+# [1.42.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.41.1...v1.42.0) (2025-12-13)
+
 ## [1.41.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.41.0...v1.41.1) (2025-09-24)
 
 
