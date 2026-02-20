@@ -1,3 +1,10 @@
+## [1.43.1](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.43.0...v1.43.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* update footer copyright year from 2025 to 2026 ([4414667](https://github.com/amir-ben-shimol/amirbenshimol/commit/4414667e11bf57218840ab3c1def5991ea6e7d5e))
+
 # [1.43.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.42.0...v1.43.0) (2025-12-14)
 
 # [1.42.0](https://github.com/amir-ben-shimol/amirbenshimol/compare/v1.41.1...v1.42.0) (2025-12-13)
